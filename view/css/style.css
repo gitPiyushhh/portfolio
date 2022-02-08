@@ -654,9 +654,7 @@ html {
   justify-content: center; }
 
 #slider {
-  transition: width 0.3s,
- border-radius 0.3s,
- height 0.3s;
+  transition: width 0.3s, border-radius 0.3s, height 0.3s;
   position: absolute;
   left: -10px;
   background-color: white;
@@ -730,7 +728,8 @@ html {
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        padding-bottom: 15rem; } }
+        padding-bottom: 5rem;
+        text-align: center; } }
   @media (max-width: 768px) {
     .header__right {
       width: 100%; } }
@@ -748,10 +747,17 @@ html {
   .header__heading {
     margin-top: 4rem;
     color: var(--white); }
+    @media (max-width: 768px) {
+      .header__heading {
+        width: 100%;
+        text-align: center; } }
   .header__sub-heading {
     margin-top: 2.4rem;
     line-height: 2rem !important;
     color: var(--white); }
+    @media (max-width: 768px) {
+      .header__sub-heading {
+        width: 100%; } }
   .header__cta {
     display: inline-block;
     margin-top: 3.2rem; }
@@ -765,6 +771,9 @@ html {
     position: relative;
     overflow: hidden;
     transition: all 0.2s ease; }
+    @media (max-width: 37.5em) {
+      .header__down {
+        display: none; } }
     .header__down::after {
       content: "\00BB";
       position: absolute;
