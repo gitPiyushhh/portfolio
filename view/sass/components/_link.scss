@@ -1,0 +1,14 @@
+.link {
+    margin-left: 2.4rem;
+    &__icon {
+        @include flex;
+        width: 2.4rem;
+        color: var(--color-primary);
+    }
+
+    &__text {
+        text-decoration: none;
+        color: var(--color-secondary);
+        margin-left: 0.8rem;
+    }
+}

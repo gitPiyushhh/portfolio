@@ -1,0 +1,14 @@
+.heading-wrapper {
+    width: fit-content;
+    text-align: center;
+
+    &__heading {
+        font-weight: 500 !important;
+        color: var(--white);
+    }
+    
+    &__sub-heading {
+        margin-top: 1.2rem;
+        color: var(--white);
+    }
+}

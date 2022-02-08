@@ -1,0 +1,35 @@
+.projects {
+    width: 100vw;
+    background-color: var(--bg-dark);
+
+    @include respond(tab-land) {
+        padding: 0 2.4rem;
+        padding-top: 15rem;
+    }
+
+    &__inner {
+        max-width: var(--grid-width);
+        margin: 0 auto;
+
+        @include flex;
+        flex-direction: column;
+    }
+    
+    &__content-wrapper {
+        width: 100%;
+        @include flex;
+        margin-top: 8rem;
+
+        @media (max-width: 870px) {
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 580px) {
+            flex-direction: column;
+        }
+    }
+
+    &__cta {
+        margin-top: 7rem;
+    }
+}

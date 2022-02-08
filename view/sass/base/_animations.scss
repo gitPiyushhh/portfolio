@@ -1,0 +1,46 @@
+@keyframes downFast {
+    0% {
+    top: -110%;
+    }
+    100% {top: 110%;}
+}
+
+@keyframes downSlow {
+    0% {
+    top: -80%;
+    }
+    100% {top: 150%;}
+}
+
+@keyframes blink {
+    0% {
+        color: var(--black); //Light chali gayi
+    }
+    25% {
+        color: var(--color-primary); //Light aa gayi
+    }
+    45% {
+        color: var(--black); //Light chali gayi
+    }
+    75% {
+        color: var(--color-primary); //Light aa gayi
+    }
+    77% {
+        color: var(--black); //Light chali gayi
+    }
+    78% {
+        color: var(--color-primary); //Light aa gayi
+    }
+    79% {
+        color: var(--black); //Light chali gayi
+    }
+    82% {
+        color: var(--color-primary); //Light aa gayi
+    }
+    85% {
+        color: var(--black); //Light chali gayi
+    }
+    100% {
+        color: var(--black); //Light chali gayi
+    }
+}

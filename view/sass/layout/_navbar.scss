@@ -1,0 +1,96 @@
+.navbar {
+    width: 100vw;
+    padding: 3rem 0;
+    padding-bottom: 0;
+
+    @include respond(tab-port) {
+        padding:5rem 3rem;
+    }
+    
+    
+
+    &__inner {
+        max-width: var(--grid-width);
+        height: fit-content;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 17.2rem;
+        height: auto;
+    }
+
+    &__button-wrapper {
+        @include flex;
+
+        &:last-child {
+            padding-left: 1.2rem !important;
+        }
+
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
+    
+    &__links-wrapper {
+        @include flex;
+
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
+    
+    &__button {
+        padding-left: 2.4rem;
+        text-decoration: none;
+        color: var(--color-secondary);
+        transition: all 0.3s ease;
+
+        &::after {
+            content: ">";
+            margin-left: 1rem;
+            @include button-typo;
+            color: transparent;
+            transition: all 0.3s ease;
+        }
+
+        &::before {
+            content: "<";
+            margin-right: 1rem;
+            @include button-typo;
+          color: transparent ;
+          transition: all 0.3s ease;
+          }
+        
+        &:hover {
+            color: var(--color-primary);
+        }
+
+        &:hover::after {
+            content: ">";
+            margin-left: 1rem;
+            @include button-typo;
+            color: var(--color-primary) !important;
+        }
+      
+        &:hover::before {
+          content: "<";
+          margin-right: 1rem;
+          @include button-typo;
+        color: var(--color-primary);
+
+        }
+    }
+
+    &__cta {
+        margin-left: 2.4rem;
+        @include flex;
+
+        padding: 1rem;
+        background-color:  #424242;
+        border-radius: 50%;
+    }
+}

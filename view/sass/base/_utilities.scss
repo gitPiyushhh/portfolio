@@ -1,0 +1,40 @@
+.u-button-special {
+  color: var(--color-primary) !important;
+  &::after {
+    content: ">";
+    margin-left: 1rem;
+    @include button-typo;
+    color: var(--color-primary) !important;
+  }
+  
+  &::before {
+    content: "<";
+    margin-right: 1rem;
+    color: var(--color-primary) !important;
+    @include button-typo;
+  }
+}
+
+
+////////////////////////////////////////////////////////////////
+/////// Utility 
+
+.u-hidden {
+  display: none;
+}
+
+.u-padding-left-small {
+  padding-left: 0 !important;
+}
+
+.u-color-blue {
+  color: #3BC6FF;
+}
+
+.u-mt-20 {
+  padding-top: 15rem;
+}
+
+.u-mt-7 {
+  margin-top: 6.4rem !important;
+}

@@ -1,0 +1,57 @@
+@mixin clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+//MEDIA QUERRY MANAGER😋
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) {
+            @content
+        }; //Above 1800px
+    }
+
+    @if $breakpoint == tab-land {
+        @media (max-width: 75em) {
+            @content
+        };//Below 1200px
+    }
+    
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) {
+            @content
+        }; //Below 900px
+    }
+    
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) {
+            @content
+        }; //Below 600px
+    }
+}
+
+
+// Display flex
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/////////////////////////////////////////
+//////// Typo mixins
+
+@mixin button-typo {
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    /* identical to box height, or 114% */
+
+    letter-spacing: 0.0125em;
+}

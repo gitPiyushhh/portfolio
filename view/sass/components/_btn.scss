@@ -1,0 +1,123 @@
+// --color: #031321;
+
+.btn {
+    &--underline {
+        text-transform: uppercase;
+        color: var(--color-primary);
+        text-decoration: none;
+        
+        position: relative;
+        &::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: var(--color-primary);
+
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+        }
+    }
+
+    &--neon {
+        display: block;
+        width: 100%;
+        
+        padding: 2.4rem 0;
+        text-align: center;
+        background-color: transparent;
+        position: relative;
+        
+        text-transform: uppercase;
+        overflow: hidden;
+        color: var(--color-primary);
+
+        font-weight: 400 !important;
+        cursor: pointer;
+
+        &::before {
+            content: "-->";
+            position: absolute;
+            left: 5px;
+        }
+
+        &:hover::before {
+            display: none;
+        }
+
+        &:hover {
+            color: var(--bg-dark);
+            font-weight: 400 !important;
+            box-shadow: 0 0 1rem var(--color-primary), 0 0 4rem var(--color-primary), 0 0 1rem var(--color-primary);
+            transition-delay: 2s;
+            background-color: var(--color-primary);
+            opacity: 0.6;
+        }
+
+        &-1 {
+            position: absolute;
+            display: block;
+
+            top: 0;left: -100%;
+            width: 100%; height: 2px;
+            background: linear-gradient(90deg,transparent, var(--color-primary));
+        }
+
+        &:hover &-1{
+            left: 100%;
+            transition: 1s;
+        }
+        
+        &-2 {
+            position: absolute;
+            display: block;
+
+            top: -100%;
+            right: 0;
+            height: 100%;
+            width: 2px;
+            background: linear-gradient(to bottom, transparent, var(--color-primary));
+        }
+
+        &:hover &-2 {
+            top: 100%;
+            transition: 1s;
+            transition-delay: 0.5s;
+        }
+
+        &-3 {
+            position: absolute;
+            display: block;
+
+            bottom: 0;
+            right: -100%;
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(to left, transparent, var(--color-primary));
+        }
+
+        &:hover &-3 {
+            right: 100%;
+            transition: 1s;
+            transition-delay: 1s;
+        }
+
+        &-4 {
+            position: absolute;
+            display: block;
+
+            top: 100%;
+            left: 0;
+            height: 100%;
+            width: 2px;
+            background: linear-gradient(to top, transparent, var(--color-primary));
+        }
+
+        &:hover &-4 {
+            top: -100%;
+            transition: 1s;
+            transition-delay: 1.5s;
+        }
+
+    }
+}
