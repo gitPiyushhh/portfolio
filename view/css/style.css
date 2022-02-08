@@ -654,7 +654,9 @@ html {
   justify-content: center; }
 
 #slider {
-  transition: width 0.3s, border-radius 0.3s, height 0.3s;
+  transition: width 0.3s,
+ border-radius 0.3s,
+ height 0.3s;
   position: absolute;
   left: -10px;
   background-color: white;
