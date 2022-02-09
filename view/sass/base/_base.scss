@@ -32,6 +32,30 @@ body {
   padding: 0;
   overflow-x: hidden !important;
   background-color: var(--bg-light);
+
+   /* SCROLLBAR */
+  /* Let's get this party started */
+  &::-webkit-scrollbar {
+    display: none !important;
+    overflow: scroll !important;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: var(--grey1);
+    border: 1px solid var(--grey4);
+    background-clip: content-box; /* THIS IS IMPORTANT */
+    width: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border: 1px solid var(--white);
+    border-radius: 10px;
+
+    // box-shadow: 0px 0px 15px rgba($color: #000000, $alpha: 1);
+  }
 }
 
 html {
@@ -57,29 +81,29 @@ html {
   overflow-y: auto;
   scroll-behavior: smooth;
 
-  /* SCROLLBAR */
-  /* Let's get this party started */
-  &::-webkit-scrollbar {
-    width: 0;
-    scroll-behavior: smooth;
-  }
+  // /* SCROLLBAR */
+  // /* Let's get this party started */
+  // &::-webkit-scrollbar {
+  //   width: 0;
+  //   scroll-behavior: smooth;
+  // }
 
-  /* Track */
-  &::-webkit-scrollbar-track {
-    background: var(--grey1);
-    border: 1px solid var(--grey4);
-    background-clip: content-box; /* THIS IS IMPORTANT */
-    width: 10px;
-  }
+  // /* Track */
+  // &::-webkit-scrollbar-track {
+  //   background: var(--grey1);
+  //   border: 1px solid var(--grey4);
+  //   background-clip: content-box; /* THIS IS IMPORTANT */
+  //   width: 10px;
+  // }
 
-  /* Handle */
-  &::-webkit-scrollbar-thumb {
-    background: var(--color-primary);
-    border: 1px solid var(--white);
-    border-radius: 10px;
+  // /* Handle */
+  // &::-webkit-scrollbar-thumb {
+  //   background: var(--color-primary);
+  //   border: 1px solid var(--white);
+  //   border-radius: 10px;
 
-    // box-shadow: 0px 0px 15px rgba($color: #000000, $alpha: 1);
-  }
+  //   // box-shadow: 0px 0px 15px rgba($color: #000000, $alpha: 1);
+  // }
 }
 
 
@@ -88,56 +112,4 @@ html {
   color: var(--color-tertiary);
   height: 2.4rem;
   width: 2.4rem;
-}
-
-.section-heading {
-  align-self: center;
-  cursor: pointer;
-  position: relative;
-
-  &::after {
-    content: " ";
-    display: block;
-
-    position: absolute;
-    top: 50%;
-    right: -8rem;
-
-    border-radius: 2rem;
-
-    transform: translateY(-50%);
-    transition: all 0.3s;
-
-    width:5rem;
-    height: 0.5rem;
-
-    background-color: var(--grey9);
-  }
-  
-  &::before {
-    content: " ";
-    display: block;
-
-    position: absolute;
-    top: 50%;
-    left: -8rem;
-
-    border-radius: 2rem;
-
-    transform: translateY(-50%);
-    transition: all 0.3s;
-
-    width:5rem;
-    height: 0.5rem;
-
-    background-color: var(--grey9);
-  }
-
-  &:hover:after {
-    right: -10rem;
-  }
-  
-  &:hover:before {
-    left: -10rem;
-  }
 }

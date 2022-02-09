@@ -1,0 +1,39 @@
+.testimonial-card {
+    width: 100%;
+    padding: 5rem;
+    background-color: var(--bg-dark);
+    position: relative;
+
+    border-radius: 1rem;
+    
+
+    &__text {
+        margin-top: 2.4rem;
+        width: 80%;
+        color: var(--color-secondary);
+    }
+
+    &__after {
+        position: absolute;
+        right: 30px;
+        top: 5px;
+
+        color: var(--color-primary);
+
+        font-family: 'IM Fell English SC', serif;;
+        font-size: 16rem;
+        line-height: 18rem;
+    }
+
+    &__title {
+        // margin-top: 3.2rem;
+        font-weight: 400 !important;
+        color: var(--color-secondary);
+    }
+    
+    &__post {
+        font-weight: 100 !important;
+        margin-top: 1.6rem;
+        color: var(--color-primary);
+    }
+}

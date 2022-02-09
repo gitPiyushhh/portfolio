@@ -1,10 +1,12 @@
 .projects {
     width: 100vw;
     background-color: var(--bg-dark);
+    padding-bottom: 7rem;
 
     @include respond(tab-land) {
         padding: 0 2.4rem;
         padding-top: 15rem;
+        padding-bottom: 7rem;
     }
 
     &__inner {
@@ -30,6 +32,10 @@
     }
 
     &__cta {
-        margin-top: 7rem;
+        width: 27rem !important;
+
+        @include respond(phone) {
+            width: 100% !important;
+        }
     }
 }

@@ -1,0 +1,72 @@
+.testimonials {
+    width: 100vw;
+    padding-bottom: 7rem;
+
+
+    @include respond(tab-land) {
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+    }
+
+
+    &__inner {
+        max-width: var(--grid-width);
+        margin: 0 auto;
+
+        @include flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &__content-wrapper {
+        margin-top: 8rem;
+        width: 100%;
+        position: relative;
+
+        @include flex;
+        overflow-x: hidden;
+    }
+
+    &__dot-container {
+        width: 10rem;
+        margin-top: 4rem;
+        align-self: center;
+        @include flex;
+    }
+
+    &__dot {
+        padding: 1rem;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: var(--bg-dark);
+        cursor: pointer;
+
+        &--active {
+            outline: 1px solid var(--color-primary);
+            outline-offset: 1.5px;
+        }
+    }
+
+    &__move {
+        position: absolute;
+        left: 0;
+        top: 70%;
+        z-index: 9999;
+        background-color: var(--white);
+        opacity: 0.5;
+        transform: translateY(-50%);
+        padding: 1rem;
+        border-radius: 50%;
+        @include flex;
+        
+        &--back {   
+            left: 100%;
+            right: 0;
+            z-index: 9999;
+        }
+    }
+
+    &__symbol {
+        align-self: center;
+    }
+}

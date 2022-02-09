@@ -1,6 +1,5 @@
 .header {
   width: 100vw;
-  overflow-y: visible !important;
 
   @include respond(tab-land) {
     padding: 0 2.4rem;
@@ -29,7 +28,7 @@
 
       @include flex;
       flex-direction: column;
-      padding-bottom: 5rem;
+      padding-bottom: 7rem;
       text-align: center;
     }
   }

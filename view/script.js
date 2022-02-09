@@ -1,60 +1,47 @@
 'use strict';
 
-var initialMouse = 0;
-var slideMovementTotal = 0;
-var mouseIsDown = false;
-var slider = $('#slider');
 
-slider.on('mousedown touchstart', function(event){
-	mouseIsDown = true;
-	slideMovementTotal = $('#button-background').width() - $(this).width() + 10;
-	initialMouse = event.clientX || event.originalEvent.touches[0].pageX;
-});
 
-$(document.body, '#slider').on('mouseup touchend', function (event) {
-	if (!mouseIsDown)
-		return; 
-	mouseIsDown = false;
-	var currentMouse = event.clientX || event.changedTouches[0].pageX;
-	var relativeMouse = currentMouse - initialMouse;
+////////////////////////////////////////////////////////////////////////
+/////////////////// slider
 
-	if (relativeMouse < slideMovementTotal) {
-		$('.slide-text').fadeTo(300, 1);
-		slider.animate({
-			left: "-10px"
-		}, 300);
-		return;
-	}
-	slider.addClass('unlocked');
-	$('#locker').text('lock_outline');
-	setTimeout(function(){
-		slider.on('click tap', function(event){
-			if (!slider.hasClass('unlocked'))
-				return;
-			slider.removeClass('unlocked');
-			$('#locker').text('lock_open');
-			slider.off('click tap');
-		});
-	}, 0);
-});
+const dot1 = document.getElementById('dot-1');
+const dot2 = document.getElementById('dot-2');
+const dot3 = document.getElementById('dot-3');
 
-$(document.body).on('mousemove touchmove', function(event){
-	if (!mouseIsDown)
-		return;
+const testCard1 = document.getElementById('test-card-1');
+const testCard2 = document.getElementById('test-card-2');
+const testCard3 = document.getElementById('test-card-3');
 
-	var currentMouse = event.clientX || event.originalEvent.touches[0].pageX;
-	var relativeMouse = currentMouse - initialMouse;
-	var slidePercent = 1 - (relativeMouse / slideMovementTotal);
-	
-	$('.slide-text').fadeTo(0, slidePercent);
 
-	if (relativeMouse <= 0) {
-		slider.css({'left': '-10px'});
-		return;
-	}
-	if (relativeMouse >= slideMovementTotal + 10) {
-		slider.css({'left': slideMovementTotal + 'px'});
-		return;
-	}
-	slider.css({'left': relativeMouse - 10});
-});
+dot1.addEventListener('click', function(e) {
+	e.preventDefault();
+	dot1.classList.add('testimonials__dot--active');
+	dot2.classList.remove('testimonials__dot--active');
+	dot3.classList.remove('testimonials__dot--active');
+	testCard2.classList.add('u-hidden');
+	testCard3.classList.add('u-hidden');
+	testCard1.classList.remove('u-hidden');
+})
+
+
+
+dot2.addEventListener('click', function(e) {
+	e.preventDefault();
+	dot2.classList.add('testimonials__dot--active');
+	dot1.classList.remove('testimonials__dot--active');
+	dot3.classList.remove('testimonials__dot--active');
+	testCard1.classList.add('u-hidden');
+	testCard3.classList.add('u-hidden');
+	testCard2.classList.remove('u-hidden');
+})
+
+dot3.addEventListener('click', function(e) {
+	e.preventDefault();
+	dot3.classList.add('testimonials__dot--active');
+	dot2.classList.remove('testimonials__dot--active');
+	dot1.classList.remove('testimonials__dot--active');
+	testCard1.classList.add('u-hidden');
+	testCard2.classList.add('u-hidden');
+	testCard2.classList.remove('u-hidden');
+})
