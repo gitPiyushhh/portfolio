@@ -45,3 +45,33 @@ dot3.addEventListener('click', function(e) {
 	testCard2.classList.add('u-hidden');
 	testCard2.classList.remove('u-hidden');
 })
+
+const myTimeout = setTimeout(preload, 4000);
+
+function preload() {
+  document.getElementById('preloader').style.display = 'none';
+  document.getElementById('html').style.overflowY = 'visible';
+}
+
+const smallTimeout = setTimeout(preload2, 100);
+
+function preload2() {
+	document.getElementById('preloader').classList.add('preloader-animate');
+	document.getElementById('html').style.overflowY = 'hidden';
+}
+
+
+/////////////////////////////////////////////
+///////// Resume
+
+const resume = document.getElementById('resume-btn');
+
+// const resumeTimeout = setTimeout(linkOpen, 1000);
+
+resume.addEventListener('click', (e) => {e.preventDefault(); setTimeout(linkOpen, 2000)});
+
+function linkOpen() {
+	console.log('Link');
+	resume.setAttribute("href", "./drawables/My resume (piyush) (6).pdf");
+	window.location.href = "https://drive.google.com/file/d/1SMdWHMGXWmHWJnmfbWyPOO_ImbLa6bmP/view?usp=sharing";
+}

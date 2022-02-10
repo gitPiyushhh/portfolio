@@ -36,22 +36,14 @@ body {
    /* SCROLLBAR */
   /* Let's get this party started */
   &::-webkit-scrollbar {
-    display: none !important;
+    width: 10px;
     overflow: scroll !important;
   }
-
-  /* Track */
-  &::-webkit-scrollbar-track {
-    background: var(--grey1);
-    border: 1px solid var(--grey4);
-    background-clip: content-box; /* THIS IS IMPORTANT */
-    width: 10px;
-  }
+  
 
   /* Handle */
   &::-webkit-scrollbar-thumb {
     background: var(--color-primary);
-    border: 1px solid var(--white);
     border-radius: 10px;
 
     // box-shadow: 0px 0px 15px rgba($color: #000000, $alpha: 1);
@@ -77,33 +69,6 @@ html {
     font-size: 75%; //Here we want 1 rem to be 12. So  12/16 in % is 75%
     // overflow-x: hidden !important;
   }
-
-  overflow-y: auto;
-  scroll-behavior: smooth;
-
-  // /* SCROLLBAR */
-  // /* Let's get this party started */
-  // &::-webkit-scrollbar {
-  //   width: 0;
-  //   scroll-behavior: smooth;
-  // }
-
-  // /* Track */
-  // &::-webkit-scrollbar-track {
-  //   background: var(--grey1);
-  //   border: 1px solid var(--grey4);
-  //   background-clip: content-box; /* THIS IS IMPORTANT */
-  //   width: 10px;
-  // }
-
-  // /* Handle */
-  // &::-webkit-scrollbar-thumb {
-  //   background: var(--color-primary);
-  //   border: 1px solid var(--white);
-  //   border-radius: 10px;
-
-  //   // box-shadow: 0px 0px 15px rgba($color: #000000, $alpha: 1);
-  // }
 }
 
 

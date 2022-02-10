@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "compile" : "node-sass view/sass/main.scss view/css/style.css -w",
     "live" : "live-server"
   },

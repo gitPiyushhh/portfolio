@@ -22,6 +22,7 @@
     &--neon {
         display: block;
         width: 100%;
+        height: 6rem;
         
         padding: 2.4rem 0;
         text-align: center;
@@ -34,6 +35,8 @@
 
         font-weight: 400 !important;
         cursor: pointer;
+
+        position: relative;
 
         &::before {
             content: "-->";
@@ -119,5 +122,27 @@
             transition-delay: 1.5s;
         }
 
+        &__text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            text-decoration: none;
+            color: var(--color-primary);
+            padding: 1.5rem 0;
+
+            z-index: 999;
+        }
+
+        &:hover &__text {
+            color: var(--bg-light);
+            transition-delay: 2s;
+        }
+
     }
+}
+
+.btn-animate {
+
 }

@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html id="html">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,8 +11,30 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("preloader").addClass('u-hidden');
+        console.log("Start");
+      });
+      </script>
+
+
   </head>
   <body>
+
+
+    <!-- -1. Name Signature Preloader -->
+
+    <section class="preloader" id="preloader">
+      <div class="preloader__wrapper">
+        <h1 class="h1 preloader__sign">Piyush</h1>
+        <div class="preloader__line">&nbsp;</div>
+      </div>
+    </section>
+
 
 
     <!-- 0. Navbar -->
@@ -27,28 +49,31 @@
 
         <div class="navbar__button-wrapper">
           <a href="#" class="button navbar__button u-button-special">Home</a>
-          <a href="#" class="button navbar__button">Works</a>
-          <a href="#" class="button navbar__button u-padding-left-small">Testimonials</a>
+          <a href="#projects" class="button navbar__button">Works</a>
+          <a href="#testimonials" class="button navbar__button u-padding-left-small">Testimonials</a>
         </div>
 
         <div class="navbar__links-wrapper">
-          <a href="#" class="link">
+          <a href="https://www.linkedin.com/in/piyush-sultaniya-a5296a220/" class="link" target="_blank">
             <div class="iconify-container">
               <span class="iconify" data-icon="akar-icons:linkedin-fill"></span>
             </div>
             <a href="#" class="button link__text">Linked in</a>
           </a>
 
-          <a href="#" class="link">
+          <a href="https://github.com/gitPiyushhh" class="link" target="_blank">
             <div class="iconify-container">
               <span class="iconify" data-icon="akar-icons:github-fill"></span>
             </div>
             <a href="#" class="button link__text">Github</a>
           </a>
 
-          <div class="navbar__cta">
-            <span class="iconify" data-icon="ant-design:mail-outlined"></span>
-          </div>
+          <a href="mailto:@piyushhhagarwal@gmail.com?subject=From%20your%20Portfolio" target="_blank">
+            <div class="navbar__cta">
+              <span class="iconify" data-icon="ant-design:mail-outlined"></span>
+            </div>
+          </a>
+
         </div>
 
         <!-- <div id="hamburger u-hidden">
@@ -75,20 +100,22 @@
                     Show me the code
                 </h2>
 
-                <p class="body2 header__sub-heading">
+                <p class="body1 header__sub-heading">
                     I design & code attractive and beautiful<br>
                      screens & I love what I do   
                 </p>
 
                 <!-- <a href = "#" class="btn--underline button header__cta">Let's chat</a> -->
+                
 
                   <p class="button btn--neon  header__cta">
-                  <span class="btn--neon-1"></span>
-                  <span class="btn--neon-2"></span>
-                  <span class="btn--neon-3"></span>
-                  <span class="btn--neon-4"></span>
-                  Hire me!
-                </p>
+                    <span class="btn--neon-1"></span>
+                    <span class="btn--neon-2"></span>
+                    <span class="btn--neon-3"></span>
+                    <span class="btn--neon-4"></span>
+                    <a class="btn--neon__text"id="resume-btn" >View resume</a>
+                  </p>
+              
 
                 <a href="#about">
                   <div class="header__wrapper">
@@ -101,7 +128,7 @@
             </div>
 
             <div class="header__right">
-                <img src="./drawables/Hero img.png" alt="Hero Image" class="header__img">
+                <img src="./drawables/pf11-removebg.png" alt="Hero Image" class="header__img">
             </div>
         </div>
     </section>
@@ -113,9 +140,9 @@
             <div class="about__left">
                 
                 <div class="about-card">
-                    <h6 class="about-card__heading h6">Design</h6>
+                    <h6 class="about-card__heading h5">Design</h6>
     
-                    <p class="about-card__text overline">I design robust & user centric interfaces</p>
+                    <p class="about-card__text body2">I design robust & user centric interfaces</p>
     
                     <p class="about-card__number button">5 Projects</p>
 
@@ -125,9 +152,9 @@
                 </div>
 
                 <div class="about-card">
-                    <h6 class="about-card__heading h6">Frontend</h6>
+                    <h6 class="about-card__heading h5">Frontend</h6>
     
-                    <p class="about-card__text overline">I develop frontend with seamless coding</p>
+                    <p class="about-card__text body2">I develop frontend with seamless coding</p>
     
                     <p class="about-card__number button">5 Projects</p>
 
@@ -137,9 +164,9 @@
                 </div>
 
                 <div class="about-card">
-                    <h6 class="about-card__heading h6">Backend</h6>
+                    <h6 class="about-card__heading h5">Backend</h6>
     
-                    <p class="about-card__text overline">I can write robust & scalable backend code</p>
+                    <p class="about-card__text body2">I can write robust & scalable backend code</p>
     
                     <p class="about-card__number button">5 Projects</p>
 
@@ -158,7 +185,7 @@
 
               <p class="about__caption body1">Every great project begin with the  right people..</p>
               
-              <p class="about__text body1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+              <p class="about__text body1">Namaste, I am Piyush. I am an entry level web-developer and a pre-final year grad.Its been more than a year till I started my journey as a web developer. I have completed a handful of projects that fit to business & consumer needs. CIn addition to this I am also a interface & experience designer which powers me to make useful & attractive interfaces.urrently I am working on Node.js to sharpen my backend development skills. </p>
 
               <!-- <div id="button-background">
                 <span class="slide-text">Swipe</span>
@@ -172,7 +199,7 @@
 
     <!-- 3. Projects -->
 
-    <section class="projects u-mt-20">
+    <section class="projects u-mt-20" id="projects">
       <div class="projects__inner">
 
         <div class="heading-wrapper">
@@ -188,15 +215,15 @@
             <img src="./drawables/Kislay.png" alt="Kislay Seva Sansthan" class = "project-card__img">
   
             <div class="project-card__wrapper">
-              <p class="body1 project-card__title">Kislay NGO Website</p>
+              <p class="h5 project-card__title">Kislay NGO Website</p>
   
-            <p class="body2 project-card__heading">Tech Stack:</p>
+            <!-- <p class="h6 project-card__heading">Tech Stack:</p> -->
   
             <ul class="project-card__list">
-              <li><p class="overline project-card__text">Complete design & prototyping on <b>Figma</b></p></li><br>
-              <li><p class="overline project-card__text">HTML/CSS, SCSS, Node.js, J-Querry, Java script</p></li><br>
-              <li><p class="overline project-card__text">Deployed on heroku</p></li><br>
-              <li><p class="overline project-card__text">Razorpay payment gateway integration</p></li>
+              <li><p class="body2 project-card__text">Complete design & prototyping on Figma</p></li><br>
+              <li><p class="body2 project-card__text">HTML/CSS, SCSS, Node.js, J-Querry, Java script</p></li><br>
+              <li><p class="body2 project-card__text">Deployed on heroku</p></li><br>
+              <li><p class="body2 project-card__text">Razorpay payment gateway integration</p></li>
             </ul>
   
             <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
@@ -250,7 +277,7 @@
 
     <!-- 4. Recommendations -->
     
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
       <div class="testimonials__inner">
 
         <div class="heading-wrapper u-mt-7">
@@ -268,7 +295,7 @@
 
             <h6 class="caption testimonial-card__post">Kislay seva Sansthan</h6>
             
-            <p class="body1 testimonial-card__text">Piyush has worked a lot good in the last few months Piyush has worked a lot good in the last few months Piyush has worked a lot good in the last few months</p>
+            <p class="body1 testimonial-card__text">Piyush has performed all the tasks with near perfection. His technical, collaborating & empathetic skills are good. I recommend him & wish him luck for future..</p>
           </div>
 
 
@@ -330,11 +357,39 @@
 
     <!-- 5. Contact -->
 
+    <section class="contact">
+      <div class="contact__inner">
+        <div class="heading-wrapper u-mt-7">
+          <h2 class="h2 heading-wrapper__heading">Let's connect</h2>
+          <h6 class="body1 heading-wrapper__sub-heading">Start with a "hi"!</h6>
+        </div>
+
+        <div class="contact__content-wrapper">
+
+          <a href="https://www.linkedin.com/in/piyush-sultaniya-a5296a220/" target="_blank"><img src="./drawables/linkedin.svg" alt="" class="contact__img"></a>
+          <a href="https://github.com/gitPiyushhh" target="blank"><img src="./drawables/github.svg" alt="" class="contact__img"></a>
+          <a href="https://dribbble.com/Piyushhh______" target="blank"><img src="./drawables/dribbble.svg" alt="" class="contact__img"></a>
+          <a href="mailto:@piyushhhagarwal@gmail.com?subject=From%20your%20Portfolio" target="blank"><img src="./drawables/outgoing_mail.svg" alt="" class="contact__img"></a>
+
+        </div>
+
+        
+      </div>
+    </section>
+
     <!-- 6. Footer -->
+
+    <section class="footer">
+      <div class="footer__inner">
+        <h4 class="h6 footer__copyright">All copyrights reserved to Piyush &copy; 2022</h4>
+      </div>
+    </section>
+
 
     <!-- ////////////////////////  JS Files  ///////////////////////////////// -->
 
-    <script src="/view/script.js" async defer></script>
+    <script src="script.js" async defer></script> 
+    <!-- <script src="script.js" async defer></script> -->
     
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script> -->
 
@@ -351,7 +406,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+
     <!-- ////////////////////////  Icons Files  ///////////////////////////////// -->
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+
   </body>
 </html>

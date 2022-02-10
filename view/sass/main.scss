@@ -7,16 +7,20 @@
 
 @import "components/about-card";
 @import "components/btn";
+@import "components/contact-icon-wrapper";
 @import "components/hamburger";
 @import "components/heading-wrapper";
 @import "components/iconify";
 @import "components/link";
+@import "components/preloader-aminate";
 @import "components/project-card";
 @import "components/testimonial-card";
 
 @import "layout/about";
+@import "layout/contact";
 @import "layout/footer";
 @import "layout/header";
 @import "layout/navbar";
+@import "layout/preloader";
 @import "layout/projects";
 @import "layout/testimonials";
