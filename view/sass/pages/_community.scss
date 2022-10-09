@@ -1,0 +1,23 @@
+.community-main {
+  max-width: var(--grid-width);
+
+  margin: 20.5rem auto 15rem;
+
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  &__inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  &__card-wrapper {
+    margin-top: 10rem;
+  }
+}

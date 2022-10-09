@@ -1,0 +1,20 @@
+.footer {
+    width: 100%;
+    background-color: var(--bg-dark);
+
+
+    &__inner {
+        max-width: var(--grid-width);
+        margin: 0 auto;
+        padding: 5rem 0;
+        text-align: center;
+
+        @include respond(tab-port) {
+            padding: 5rem 2rem ;
+        }
+    }
+
+    &__copyright {
+        color: var(--color-primary);
+    }
+}

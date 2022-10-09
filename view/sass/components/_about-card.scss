@@ -1,0 +1,35 @@
+.about-card {
+    width: 48.7rem;
+    padding: 3rem 9rem 3rem 3.5rem;
+    background-color: var(--bg-light);
+    border-radius: 1rem;
+    position: relative;
+
+    @include respond(tab-port) {
+        width: 100%;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 3.2rem;
+    }
+
+    &__heading {
+        color: var(--white);
+    }
+
+    &__text {
+        margin-top: 1.4rem;
+        color: var(--white);
+    }
+
+    &__number {
+        margin-top: 2.4rem;
+        color: var(--white);
+    }
+
+    &__img {
+        position: absolute;
+        right: 3.5rem;
+        top: 3rem;
+    }
+}

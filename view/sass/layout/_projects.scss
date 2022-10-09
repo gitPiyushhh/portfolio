@@ -1,0 +1,63 @@
+.projects {
+    width: 100vw;
+    background-color: var(--bg-dark);
+    padding-bottom: 7rem;
+
+    position: relative;
+    transition: all 0.3s ease-out;
+
+    @include respond(tab-land) {
+        padding: 0 2.4rem;
+        padding-top: 15rem;
+        padding-bottom: 7rem;
+    }
+
+    &__inner {
+        max-width: var(--grid-width);
+        margin: 0 auto;
+
+        @include flex;
+        flex-direction: column;
+    }
+    
+    &__content-wrapper {
+        width: 100%;
+        @include flex;
+        margin-top: 8rem;
+        transition: all 0.3s ease-out;
+
+        @media (max-width: 870px) {
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 580px) {
+            flex-direction: column;
+        }
+    }
+
+    &__cta {
+        width: 27rem !important;
+
+        @include respond(phone) {
+            width: 100% !important;
+        }
+    }
+
+    // Hidden case
+    &-hidden {
+        max-width: var(--grid-width);
+        margin: 0 auto;
+        display: flex;
+        padding-top: 5rem ;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        animation: sign 0.5s ease-in;
+
+        @include respond(phone) {
+            padding-top: 1rem;
+        }
+    }
+}
+
+

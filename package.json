@@ -1,0 +1,17 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "compile" : "node-sass view/sass/main.scss view/css/style.css -w",
+    "live" : "live-server"
+  },
+  "author": "Piyush Agarwal",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^7.0.1"
+  }
+}

@@ -1,0 +1,37 @@
+.community-card {
+    width: 33%;
+    background-color: var(--bg-light);
+    border-radius: 1rem;
+
+    @include respond(tab-port) {
+        width: 100%;
+    }
+    
+    &__img {
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    &__wrapper {
+        padding:0 3rem 3rem 3rem;
+    }
+
+    &__text {
+        margin-top: 2rem;
+        color: var(--color-secondary);
+    }
+
+    &__card-cta {
+        text-decoration: None;
+        color: var(--color-secondary);
+        font-weight: 300;
+        margin-top: 3rem;
+    }
+    
+    &__card-link {
+        font-weight: 300;
+        text-decoration: None;
+        color: var(--color-primary);
+        margin-top: 3rem;
+    }
+}

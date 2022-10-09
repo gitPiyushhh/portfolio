@@ -1,0 +1,103 @@
+#hamburger {
+  width: 5.6rem;
+  height: 4rem;
+  position: relative;
+  padding: 0.5rem;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#hamburger span {
+  display: block;
+  position: absolute;
+  height: 0.5rem;
+  width: 50%;
+  background: #d3531a;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#hamburger span:nth-child(even) {
+  left: 50%;
+  border-radius: 0 9px 9px 0;
+}
+
+#hamburger span:nth-child(odd) {
+  left: 0px;
+  border-radius: 9px 0 0 9px;
+}
+
+#hamburger span:nth-child(1),
+#hamburger span:nth-child(2) {
+  top: 0px;
+}
+
+#hamburger span:nth-child(3),
+#hamburger span:nth-child(4) {
+  top: 1.8rem;
+}
+
+#hamburger span:nth-child(5),
+#hamburger span:nth-child(6) {
+  top: 3.6rem;
+}
+
+#hamburger.open span:nth-child(1),
+#hamburger.open span:nth-child(6) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#hamburger.open span:nth-child(2),
+#hamburger.open span:nth-child(5) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#hamburger.open span:nth-child(1) {
+  left: 0.5rem;
+  top: 0.7rem;
+}
+
+#hamburger.open span:nth-child(2) {
+  left: calc(50% - 0.25rem);
+  top: 0.7rem;
+}
+
+#hamburger.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+
+#hamburger.open span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+
+#hamburger.open span:nth-child(5) {
+  left: 0.5rem;
+  top: 2.9rem;
+}
+
+#hamburger.open span:nth-child(6) {
+  left: calc(50% - 0.25rem);
+  top: 2.9rem;
+}

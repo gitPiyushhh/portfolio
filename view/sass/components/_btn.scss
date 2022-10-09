@@ -1,0 +1,66 @@
+// --color: #031321;
+
+.btn {
+    text-decoration: none;
+    &--underline {
+        text-transform: uppercase;
+        color: var(--color-primary);
+        text-decoration: none;
+        
+        position: relative;
+        &::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: var(--color-primary);
+
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    
+
+    &--neon {
+        display: block;
+        width: 100%;
+        height: 6rem;
+        
+        padding: 2.4rem 0;
+        text-align: center;
+        background-color: #64f4acb8;
+
+        border: 1px solid var(--color-primary);
+        position: relative;
+        
+        text-transform: uppercase;
+        overflow: hidden;
+        color: var(--block);
+
+        border-radius: 0.5rem;
+
+
+        font-weight: 400 !important;
+        cursor: pointer;
+
+        position: relative;
+
+        &:hover {
+            background-color: var(--color-primary);
+        }
+
+        &__text {
+            text-decoration: none;
+            color: var(--color-primary);
+        }
+    }
+}
+
+.button {
+    color: var(--color-transparent);
+}

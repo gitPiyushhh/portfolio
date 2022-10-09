@@ -1,0 +1,77 @@
+.u-button-special {
+  color: var(--color-primary) !important;
+  &::after {
+    content: ">";
+    margin-left: 1rem;
+    @include button-typo;
+    color: var(--color-primary) !important;
+  }
+  
+  &::before {
+    content: "<";
+    margin-right: 1rem;
+    color: var(--color-primary) !important;
+    @include button-typo;
+  }
+}
+
+
+////////////////////////////////////////////////////////////////
+/////// Utility 
+
+.u-hidden {
+  display: none;
+}
+
+.u-flex {
+  width : 100%;
+  @include flex;
+}
+
+.u-color-text {
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
+  padding-bottom: 3px;
+}
+
+.u-padding-left-small {
+  padding-left: 0 !important;
+}
+
+.u-color-blue {
+  color: #3BC6FF;
+}
+
+.u-mt-20 {
+  padding-top: 15rem;
+}
+
+.u-mt-7 {
+  margin-top: 6.4rem !important;
+}
+
+.u-hidden {
+  display: none ;
+} 
+
+.u-rotate-left {
+  transform: rotate(180deg) !important;
+}
+
+/////////////////////////////////////////
+///  Animation utilities
+
+.transform_down{
+  transform: scale(0) !important;
+  transform: translateY(-1rem);
+}
+
+.transform_up {
+  transform: scale(1) !important;
+  transform: translateY(0);
+  transition: all 1s ease-in-out !important;
+}
+
+.u-hidden {
+  display: none !important;
+}

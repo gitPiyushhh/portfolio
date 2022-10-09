@@ -1,0 +1,13 @@
+.preloader-animate {
+    
+      &:after {
+        transition: all 2s ease-in;
+        left: 99% !important;
+      }
+      
+    
+      &:before {
+        transition: all 4s ease-in;
+        left: 99% !important;
+      }
+}

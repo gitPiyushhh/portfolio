@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <<![endif]-->
+<html id="html">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Home | Piyush Sultaniya</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./drawables/logo test 2.png">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+
+
+  </head>
+  <body>
+
+
+
+    <!-- 0. Navbar -->
+    
+    <section class="navbar" id ="navbar">
+      <div class="navbar__inner">
+        <a href="./index.html" style="text-decoration: none;">
+          <h5 class="h5 navbar__logo--text">Piyush___</h5>
+        </a>
+        
+
+        <div class="navbar__button-wrapper">
+          <a href="#" class="button navbar__button u-button-special">Home</a>
+          <a href="#projects" class="button navbar__button" id="projects_goto">Projects</a>
+          <a href="#certificates" class="button navbar__button u-padding-left-small">Certificates</a>
+          <a href="./community.html" class="button navbar__button u-padding-left-small">Community</a>
+          <a href="#contact" class="button navbar__button u-padding-left-small">Contact</a>
+        </div>
+
+        <div class="navbar__menubar" id="menubar" >
+          <div class="navbar__menubar--line" id="menubar__line">
+              &nbsp;
+          </div>
+        </div>
+<!-- 
+        <div class="navbar__links-wrapper">
+          <a href="https://www.linkedin.com/in/piyush-sultaniya-a5296a220/" class="link" target="_blank">
+            <div class="iconify-container">
+              <span class="iconify" data-icon="akar-icons:linkedin-fill"></span>
+            </div>
+            <a href="#" class="button link__text">Linked in</a>
+          </a>
+
+          <a href="https://github.com/gitPiyushhh" class="link" target="_blank">
+            <div class="iconify-container">
+              <span class="iconify" data-icon="akar-icons:github-fill"></span>
+            </div>
+            <a href="#" class="button link__text">Github</a>
+          </a>
+
+          <a href="mailto:@piyushhhagarwal@gmail.com?subject=From%20your%20Portfolio" target="_blank">
+            <div class="navbar__cta">
+              <span class="iconify" data-icon="ant-design:mail-outlined"></span>
+            </div>
+          </a>
+
+        </div> -->
+
+        <!-- <div id="hamburger u-hidden">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div> -->
+
+    </section>
+
+    <!-- NAVBAR MOBILE SECTION  -->
+    <div class="navbar__mobile u-hidden" id="navbar_mobile">
+      <div class="navbar__button-wrapper--mobile">
+          <a href="./index.html" class="h5 navbar__button u-button-special " id="homeNav">Home</a>
+          <a href="./index.html#projects" class="h5 navbar__button u-padding-left-small" id="projectNav">Projects</a>
+          <a href="./index.html#certificates" class="h5 navbar__button u-padding-left-small" id="certNav">Certificates</a>
+          <a href="./community.html" class="h5 navbar__button u-padding-left-small" id="communityNav">Community</a>
+          <a href="./index.html#contact" class="h5 navbar__button u-padding-left-small" id="contactNav">Contact</a>
+      </div>
+    </div>
+    
+
+
+    <!-- 1. Hero Header -->
+
+    <section class="header" id="header">
+        <div class="header__inner">
+            <div class="header__left">
+              
+
+                <h2 class="h2 header__heading">
+                    Piyush Sultaniya<br>
+                </h2>
+
+                <p class="header__tag body2">
+                  UI-UX Designer | Developer 
+                </p>
+
+                
+
+                <p class="body1 header__sub-heading">
+                    I design & code attractive and beautiful<br>
+                     screens & I love what I do   
+                </p>
+
+                <!-- <a href = "#" class="btn--underline button header__cta">Let's chat</a> -->
+                
+
+                  <p class="button btn--neon  header__cta" id = "resume-btn" target="_blank">
+                    <!-- <a class="btn--neon__text button" href="https://drive.google.com/file/d/1BL6SYl_y8mepaneLY8qbUcWYJfZGQuik" target="_blank">View resume</a> -->
+                    <a class="btn--neon__text button" href = 'https://drive.google.com/file/d/1BL6SYl_y8mepaneLY8qbUcWYJfZGQuik' target="_blank" style = 'text-decoration: none'>View Resume</a>
+                  </p>
+
+                  <p class="button btn--neon  header__cta2" id = 'headerCta2'>
+                    <a class="btn--neon__text button" href = 'https://github.com/gitPiyushhh' target="_blank" style = 'text-decoration: none'>View Github</a>
+                  </p>
+              
+
+                <a href="#about">
+                  
+                </a>
+          
+            </div>
+
+            <div class="header__right">
+                <!-- <img src="./drawables/Coding-rafiki.png" alt="Hero Image" class="header__img"> -->
+                <div class="header__img-container">
+                  <img src="./drawables/image 1.png" alt="" class="header__img">  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Intro -->
+
+    <section class="about" id="about">
+        <div class="about__inner">
+            <div class="about__left">
+                
+                <div class="about-card" id="aboutCard1">
+                    <h6 class="about-card__heading h5">Design</h6>
+    
+                    <p class="about-card__text body2">I design robust & user centric interfaces</p>
+    
+                    <p class="about-card__number button" style = 'color: #F9F4E8;'>5 Projects</p>
+
+                    <div class="about-card__img">
+                        <span class="iconify" data-icon="gis:measure-line"></span>
+                    </div>
+                </div>
+
+                <div class="about-card" id = 'aboutCard2'>
+                    <h6 class="about-card__heading h5">Frontend</h6>
+    
+                    <p class="about-card__text body2">I develop frontend with seamless coding</p>
+    
+                    <p class="about-card__number button" style = 'color: #F9F4E8;'>5 Projects</p>
+
+                    <div class="about-card__img">
+                        <span class="iconify" data-icon="bi:code-slash"></span>
+                    </div>
+                </div>
+
+                <div class="about-card" id = 'aboutCard3'>
+                    <h6 class="about-card__heading h5">Backend</h6>
+    
+                    <p class="about-card__text body2">I can write robust & scalable backend code</p>
+    
+                    <p class="about-card__number button" style = 'color: #F9F4E8;'>5 Projects</p>
+
+                    <div class="about-card__img">
+                        <span class="iconify" data-icon="ant-design:cloud-server-outlined"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__right">
+              <h6 class="about__heading h6">Intro</h6>
+
+              <h5 class="about__sub-heading h5">
+                Hello! I'm Piyush Sultaniya
+              </h5>
+
+              <p class="about__caption body1">Every great project begin with the  right people..</p>
+              
+              <p class="about__text body1">Namaste, I am Piyush. I am an entry level web-developer and a final year grad.My primary programming language is Python.Its been more than a year till I started my journey as a web developer. I have completed a handful of projects that fit to business & consumer needs. In addition to this I am also a interface & experience designer which powers me to make useful & attractive interfaces.Currently I am working on Django to sharpen my backend development skills. </p>
+
+              <!-- <div id="button-background">
+                <span class="slide-text">Swipe</span>
+                <div id="slider">
+                  <i id="locker" class="material-icons">lock</i>
+                </div>
+              </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="projects u-mt-20" id="projects">
+      <div class="projects__inner">
+
+        <div class="heading-wrapper">
+          <h2 class="h2 heading-wrapper__heading">Skills</h2>
+          <h6 class="body1 heading-wrapper__sub-heading">All that I know!</h6>
+        </div>
+
+        <div class="projects__content-wrapper" id = 'skills_container-out'>
+
+          <div class="skills_contanier" id = 'skills_contanier'>
+            <div class="skills_skill" id = 'skills_skill'>
+              <img src="./drawables/python.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/node-dot-js.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/django.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill" >
+              <img src="./drawables/html5.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/css3.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/postman.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill" >
+              <img src="./drawables/git.png" alt="" class = 'skills_icon'>
+            </div>
+            
+            <div class="skills_skill">
+              <img src="./drawables/github.png" alt="" class = 'skills_icon'>
+            </div>
+            
+            <div class="skills_skill">
+              <img src="./drawables/figma.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/sass.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/npm.png" alt="" class = 'skills_icon'>
+            </div>
+            
+            <!-- Repeat -->
+
+
+            <div class="skills_skill">
+              <img src="./drawables/sass.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/figma.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/github.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill" >
+              <img src="./drawables/git.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/postman.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/css3.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill" >
+              <img src="./drawables/html5.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/django.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/node-dot-js.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill" id = 'skills_skill'>
+              <img src="./drawables/python.png" alt="" class = 'skills_icon'>
+            </div>
+
+
+          </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- 3. Projects -->
+
+    <section class="projects u-mt-20" id="projects">
+      <div class="projects__inner">
+
+        <div class="heading-wrapper">
+          <h2 class="h2 heading-wrapper__heading">Projects</h2>
+          <h6 class="body1 heading-wrapper__sub-heading">Recent from 'Knapsack'</h6>
+        </div>
+
+        <div class="projects__content-wrapper">
+          
+
+          <!-- Porject-1: Kislay NGO Website -->
+          <div class="project-card" id ='#projectCard'>
+            <img src="./drawables/mapty.png" alt="Dynamic Alert & Blackspot identifcation on Routemap" class = "project-card__img">
+  
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">Mapty</p>
+  
+            <!-- <p class="h6 project-card__heading">Tech Stack:</p> -->
+  
+            <ul class="project-card__list">
+              <li><p class="body2 project-card__text">Full stack website(MERN)</p></li><br>
+              <li><p class="body2 project-card__text">Mongo DB Geolocation Querries</p></li><br>
+              <li><p class="body2 project-card__text">JWT & firebase authentication</p></li><br>
+              <li><p class="body2 project-card__text">Server side rendering </p></li>
+            </ul>
+  
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="#projects" class="project-card__link button" style="text-align: center;"></a>
+              <p class="iconify body2" style="text-align: center;">Ongoing..</p>
+            </div>
+          </div>
+
+          <div class="project-card" id ='projectCard2'>
+            <img src="./drawables/natours2.jpg" alt="Dynamic Alert & Blackspot identifcation on Routemap" class = "project-card__img">
+  
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">Natours-API</p>
+  
+            <!-- <p class="h6 project-card__heading">Tech Stack:</p> -->
+  
+            <ul class="project-card__list">
+              <li><p class="body2 project-card__text">Express.js, Mongo-DB Atlas</p></li><br>
+              <li><p class="body2 project-card__text">Mongo DB Aggregation pipeline </p></li><br>
+              <li><p class="body2 project-card__text">JWT authentication</p></li><br>
+              <li><p class="body2 project-card__text">Server side rendering(PUG) </p></li>
+            </ul>
+  
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="https://github.com/gitPiyushhh/Natours-API" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+
+           <!-- Porject-2: Yet to come -->
+           <div class="project-card"  id = 'projectCard3'>
+            <img src="./drawables/kislay2.jpg" alt="Kislay Foundation" class = "project-card__img">
+  
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">Kislay NGO</p>
+  
+            <!-- <p class="h6 project-card__heading">Tech Stack:</p> -->
+  
+            <ul class="project-card__list">
+              <li><p class="body2 project-card__text">Doantions mamagement website</p></li><br>
+              <li><p class="body2 project-card__text">HTML/CSS, SCSS, JS, Node.js</p></li><br>
+              <li><p class="body2 project-card__text">Razorpay payment gateway integration</p></li><br>
+              <li><p class="body2 project-card__text">Deployed on heroku</p></li>
+            </ul>
+  
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="http://joinkislay.herokuapp.com/" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+
+          <!-- Porject-3: Natours -->
+          
+
+           <!-- Porject-3: Yet To Come -->           <!-- Use this to add to the new certificate-->
+           <!-- <div class="project-card">
+            <div class="project-card__yet-to-come">
+              <h3 class="h2 project-card__coming">Coming</h3>
+
+              <div class="project-card__wrapper-soon">
+                <h5 class="h1 project-card__s">	&#83; </h5>
+                <h5 class="h1 project-card__o">	&#9675; </h5>
+                <h5 class="h1 project-card__o--blink">	&#9679; </h5>
+                <h5 class="h1 project-card__n">	&#78; </h5>
+              </div>
+  
+            </div>
+            </div> -->
+        
+            
+        </div>
+
+        <div class="projects-hidden projects__content-wrapper u-hidden" id = 'projectsHidden'>
+          <div class="project-card">
+            <img src="./drawables/natours2.jpg" alt="Natours" class = "project-card__img">
+  
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">Natours</p>
+  
+            <!-- <p class="h6 project-card__heading">Tech Stack:</p> -->
+  
+            <ul class="project-card__list">
+              <li><p class="body2 project-card__text">Tours & Travel Booking app {Only Frontend}</p></li><br>
+              <li><p class="body2 project-card__text">HTML/CSS, SCSS, Flexbox, netlify</p></li><br>
+              <li><p class="body2 project-card__text">Pleasant UI</p></li><br>
+              <li><p class="body2 project-card__text">Deployed on netlify</p></li>
+            </ul>
+  
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="http://nature-to-natours.netlify.app/" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="./drawables/deepak website (1).png" alt="Natours" class = "project-card__img">
+  
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">Doctero</p>
+  
+            <!-- <p class="h6 project-card__heading">Tech Stack:</p> -->
+  
+            <ul class="project-card__list">
+              <li><p class="body2 project-card__text">Appointments Booking System for doctors</p></li><br>
+              <li><p class="body2 project-card__text">Node.js, node-mailer for mailing</p></li><br>
+              <li><p class="body2 project-card__text">Pleasant UI</p></li><br>
+              <li><p class="body2 project-card__text">Deployed on heroku</p></li><br>
+            </ul>
+  
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="https://deepak-physio.herokuapp.com/" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+
+
+          <div class="project-card">
+            <img src="./drawables/musicify.png" alt="Kislay Foundation" class = "project-card__img">
+  
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">Musicify.io</p>
+  
+            <!-- <p class="h6 project-card__heading">Tech Stack:</p> -->
+  
+            <ul class="project-card__list">
+              <li><p class="body2 project-card__text">Online Music Player{inspired from</p></li><br>
+              <li><p class="body2 project-card__text">HTML/CSS, SCSS, JS, DOM</p></li><br>
+              <li><p class="body2 project-card__text">Pleasant UI</p></li><br>
+              <li><p class="body2 project-card__text">Deployed on netlify</p></li>
+            </ul>
+  
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="https://musicify-io.netlify.app/" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+        </div>
+      
+
+      <p class="button btn--neon projects__cta  u-mt-7" id="projectHide">
+        <span class="btn--neon-1"></span>
+        <span class="btn--neon-2"></span>
+        <span class="btn--neon-3"></span>
+        <span class="btn--neon-4"></span>
+        View All Projects
+      </p>
+
+      </div>
+    </section>
+
+
+
+
+    <!-- 4. Certifications -->
+    <section class="projects u-mt-20" id="certificates">
+      <div class="projects__inner">
+
+        <div class="heading-wrapper">
+          <h2 class="h2 heading-wrapper__heading">Certifications</h2>
+          <h6 class="body1 heading-wrapper__sub-heading">Yes! I'm certified</h6>
+        </div>
+
+        <div class="projects__content-wrapper">
+
+          <div class="project-card" id = 'Certificate1'>
+            <img src="./drawables/google cert.png" alt="Flipkart grid certified" class = "project-card__img">
+  
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">Google UI/UX</p>
+  
+            
+  
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="https://www.coursera.org/account/accomplishments/verify/8FHFFDGF2B7L?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+          
+
+          <!-- Porject-1: Kislay NGO Website -->
+          
+        <div class="project-card" id="Certificate2">
+          <img src="./drawables/mongo cert--2.png" alt="MongoDB certified" class = "project-card__img">
+
+          <div class="project-card__wrapper">
+            <p class="h5 project-card__title">M001: MongoDB</p>
+
+          
+
+          <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+          <a href="https://university.mongodb.com/course_completion/d5d03a42-6cd3-4859-ad4d-0dfe64b13c1a?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing" class="project-card__link button" target="_blank">
+            <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+          </div>
+        </div>
+
+          
+
+           <!-- Porject-2: Yet to come -->
+           <div class="project-card" id = 'Certificate3'>
+            <img src="./drawables/problem solving cert.png" alt="Kislay Seva Sansthan" class = "project-card__img">
+  
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">DSA-Problem Solving</p>
+  
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="https://www.hackerrank.com/certificates/edbb5b4d3c24" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+
+           <!-- Porject-3: Yet To Come -->
+           
+
+      </div>
+
+      <div class="projects-hidden projects__content-wrapper u-hidden" id = 'certsHidden'>
+
+        
+        <div class="project-card" >
+          <img src="./drawables/py cert.png" alt="Kislay Seva Sansthan" class = "project-card__img">
+
+          <div class="project-card__wrapper">
+            <p class="h5 project-card__title">Python Certification</p>
+
+          <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+          <a href="https://www.hackerrank.com/certificates/f1e38a7e768b" class="project-card__link button" target="_blank">
+            <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+          </div>
+        </div>
+
+
+        <div class="project-card">
+          <img src="./drawables/css cert.png" alt="Flipkart grid certified" class = "project-card__img">
+
+          <div class="project-card__wrapper">
+            <p class="h5 project-card__title">CSS Certification</p>
+
+          
+
+          <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+          <a href="https://www.hackerrank.com/certificates/33277f12b9c3" class="project-card__link button" target="_blank">
+            <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+          </div>
+        </div>
+        
+
+        <!-- Porject-1: Kislay NGO Website -->
+        <div class="project-card" >
+          <img src="./drawables/postman cert.png" alt="Kislay Seva Sansthan" class = "project-card__img">
+
+          <div class="project-card__wrapper">
+            <p class="h5 project-card__title">Postman Certification</p>
+
+          <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+          <a href="https://badgr.com/public/assertions/ikEnXStWTs2G--3w5Ndu6Q?identity__email=piyushhhagarwal@gmail.com" class="project-card__link button" target="_blank">
+            <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+
+      <div class="projects-hidden projects__content-wrapper u-hidden" id = 'certsHidden2'>
+
+        <!-- Cert-7: Distributed SQL certifcion -->
+        <div class="project-card">
+          <img src="./drawables/cockroach --1.png" alt="Flipkart grid certified" class = "project-card__img">
+
+          <div class="project-card__wrapper">
+            <p class="h5 project-card__title">Distributed SQL</p>
+
+          
+
+          <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+          <a href="https://university.cockroachlabs.com/certificates/91f3269b39cf47248b5e56d50dc84e03" class="project-card__link button" target="_blank">
+            <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+          </div>
+        </div>
+
+      
+
+        
+         <!-- Porject-2: Yet to come -->
+         <div class="project-card">
+          <img src="./drawables/git cert.png" alt="Kislay Seva Sansthan" class = "project-card__img">
+
+          <div class="project-card__wrapper">
+            <p class="h5 project-card__title">Github Certification</p>
+
+          <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+          <a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiI3NTgiLCJjZXJ0aWZpY2F0ZV91cmwiOiJodHRwczpcL1wvY2VydGlmaWNhdGVzLnNpbXBsaWNkbi5uZXRcL3NoYXJlXC90aHVtYl8zNzY0NTE0XzE2NjI5NjMxMTEucG5nIiwidXNlcm5hbWUiOiJQaXl1c2ggU3VsdGFuaXlhIn0%3D&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fdashboard%2Fcertificate&%24web_only=true&_branch_match_id=829741708464079676&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FV983PCDL2CA9JK0kCAPD43iYlAAAA" class="project-card__link button" target="_blank">
+            <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+          </div>
+        </div>
+        
+
+      </div>
+
+      <p class="button btn--neon projects__cta  u-mt-7" id="certHide">
+        <span class="btn--neon-1"></span>
+        <span class="btn--neon-2"></span>
+        <span class="btn--neon-3"></span>
+        <span class="btn--neon-4"></span>
+        View All Certifications
+      </p>
+
+      </div>
+    </section>
+
+    <!-- 4. Portals  -->
+    <section class="projects u-mt-20" id="coding">
+      <div class="projects__inner">
+
+        <div class="heading-wrapper">
+          <h2 class="h2 heading-wrapper__heading">Platforms'Stats</h2>
+          <h6 class="body1 heading-wrapper__sub-heading">Hands on Coding</h6>
+        </div>
+
+        <div class="projects__content-wrapper">
+          
+
+          <!-- Porject-1: Kislay NGO Website -->
+          <div class="project-card" style="width: 25rem" id = 'platform1'>
+            <img src="./drawables/gfg 2.jpg" alt="Kislay Seva Sansthan" class = "project-card__img" >
+  
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">GeeksForGeeks</p>
+  
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="https://auth.geeksforgeeks.org/user/piyushhhagarwal/" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+
+           <!-- Porject-2: Yet to come -->
+           <div class="project-card" style="width: 25rem" id = 'platform2'>
+            <img src="./drawables/leetcode2.jpg" alt="Kislay Seva Sansthan" class = "project-card__img">
+  
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">LeetCode</p>
+  
+            
+  
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="https://leetcode.com/piyushhh___/" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+
+           <!-- Porject-3: Yet To Come -->
+           <div class="project-card" style="width: 25rem" id = 'platform3'>
+            <img src="./drawables/codechef2.jpg" alt="Kislay Seva Sansthan" class = "project-card__img">
+  
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">CodeChef</p>
+  
+            
+  
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="https://www.codechef.com/users/piyush_agarwal" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+
+          <div class="project-card" style="width: 25rem" id = 'platform4'>
+            <img src="./drawables/hackerrank2.jpg" alt="Kislay Seva Sansthan" class = "project-card__img">
+  
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">HackerRank</p>
+  
+            
+  
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="https://www.hackerrank.com/IT_1901640130047?hr_r=1" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+
+      </div>
+
+      <p class="button btn--neon projects__cta  u-mt-7">
+        <span class="btn--neon-1"></span>
+        <span class="btn--neon-2"></span>
+        <span class="btn--neon-3"></span>
+        <span class="btn--neon-4"></span>
+        View Other Accounts
+      </p>
+
+      </div>
+    </section>
+
+
+
+
+    <!-- 4. Recommendations -->
+    
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials__inner">
+
+        <div class="heading-wrapper u-mt-7">
+          <h2 class="h2 heading-wrapper__heading">Recommendations</h2>
+          <h6 class="body1 heading-wrapper__sub-heading">Those who recommend me</h6>
+        </div>
+
+        <div class="testimonials__content-wrapper">
+
+          <!-- 1. Card-1 -->
+          <div class="testimonial-card" id="test-card-1">
+            <h1 class="h1 testimonial-card__after">&#34;</h1>
+
+            <h5 class="h5 testimonial-card__title">Praveen Pandey</h5>
+
+            <h6 class="caption testimonial-card__post">Kislay seva Sansthan</h6>
+            
+            <p class="body1 testimonial-card__text">Piyush has performed all the tasks with near perfection. His technical, collaborating & empathetic skills are good. I recommend him & wish him luck for future..</p>
+          </div>
+
+
+          <!-- 2. Card-2 -->
+          <div class="testimonial-card u-hidden" style="height: 100% !important;" id="test-card-2">
+            <div class="project-card__yet-to-come">
+              <h3 class="h2 project-card__coming">Coming</h3>
+
+              <div class="project-card__wrapper-soon">
+                <h5 class="h1 project-card__s">	&#83; </h5>
+                <h5 class="h1 project-card__o">	&#9675; </h5>
+                <h5 class="h1 project-card__o--blink">	&#9679; </h5>
+                <h5 class="h1 project-card__n">	&#78; </h5>
+              </div>
+  
+            </div>
+          </div>
+
+          <!-- 3. Card-3 -->
+          <div class="testimonial-card u-hidden" style="height: 100% !important;" id="test-card-3">
+            <div class="project-card__yet-to-come">
+              <h3 class="h2 project-card__coming">Coming</h3>
+
+              <div class="project-card__wrapper-soon">
+                <h5 class="h1 project-card__s">	&#83; </h5>
+                <h5 class="h1 project-card__o">	&#9675; </h5>
+                <h5 class="h1 project-card__o--blink">	&#9679; </h5>
+                <h5 class="h1 project-card__n">	&#78; </h5>
+              </div>
+  
+            </div>
+          </div>
+          
+
+          <!-- <div class="testimonials__move">
+            <h2 class="h3 testimonials__symbol">&#8594;</h2>
+          </div>
+  
+          <div class="testimonials__move u-rotate-left testimonials__move--back">
+            <h2 class="h3 testimonials__symbol">&#8594;</h2>
+          </div> -->
+
+        </div>
+
+        
+
+        <!-- Dots container -->
+
+        <div class="testimonials__dot-container">
+          <a  class="testimonials__dot testimonials__dot--active" id="dot-1"></a>
+          <a  class="testimonials__dot testimonials__dot" id="dot-2"></a>
+          <a  class="testimonials__dot testimonials__dot" id="dot-3"></a>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <!-- 5. Contact -->
+
+    <section class="contact" id = "contact">
+      <div class="contact__inner">
+        <div class="heading-wrapper u-mt-7">
+          <h2 class="h2 heading-wrapper__heading">Let's connect</h2>
+          <h6 class="body1 heading-wrapper__sub-heading">Can we start with a "hi"!</h6>
+        </div>
+
+        <div class="contact__content-wrapper">
+
+          <a href="https://www.linkedin.com/in/piyush-sultaniya-a5296a220/" target="_blank"><img src="./drawables/linkedin.svg" alt="" class="contact__img"></a>
+          <a href="https://github.com/gitPiyushhh" target="blank"><img src="./drawables/github.svg" alt="" class="contact__img"></a>
+          <a href="https://dribbble.com/Piyushhh______" target="blank"><img src="./drawables/dribbble.svg" alt="" class="contact__img"></a>
+          <a href="mailto:@piyushhhagarwal@gmail.com?subject=From%20your%20Portfolio" target="blank"><img src="./drawables/outgoing_mail.svg" alt="" class="contact__img"></a>
+
+        </div>
+
+        
+      </div>
+    </section>
+
+    <!-- 6. Footer -->
+
+    <section class="footer">
+      <div class="footer__inner">
+        <h4 class="h6 footer__copyright">All copyrights reserved to Piyush &copy; 2022</h4>
+      </div>
+    </section>
+
+
+    <!-- ////////////////////////  JS Files  ///////////////////////////////// -->
+
+    <script src="./js/script.js" async defer></script> 
+    <!-- <script src="script.js" async defer></script> -->
+    
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script> -->
+
+    <!-- ////////////////////////  FOnts Files  ///////////////////////////////// -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+
+    <!-- ////////////////////////  Icons Files  ///////////////////////////////// -->
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+
+  </body>
+</html>

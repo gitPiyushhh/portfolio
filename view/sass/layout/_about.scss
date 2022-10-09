@@ -1,0 +1,157 @@
+.about {
+    width: 100vw;
+    background-color: var(--bg-dark);
+
+    @include respond(tab-land) {
+        padding: 0 2.4rem;
+    }
+
+    &__inner {
+        max-width: var(--grid-width);
+        @include flex;
+        margin: 0 auto;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+        }
+    }
+    
+    &__left {
+        @include flex;
+        flex-direction: column;
+        margin-top: 15rem;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    }
+
+    &__right {
+        @include flex;
+        align-items: flex-start !important;
+        flex-direction: column;
+        flex-grow: 1;
+
+        padding-left: 10rem;
+
+        @include respond(tab-port) {
+            padding-left: 0;
+        }
+    }
+
+    &__heading {
+        color: var(--white);
+        margin-top: 10rem;
+    }
+
+    &__sub-heading {
+        margin-top: 2.8rem;
+        color: var(--white);
+        font-weight: 500 !important;
+    }
+
+    &__caption {
+        margin-top: 4rem;
+        color: var(--color-primary);
+    }
+
+    &__text {
+        margin-top: 4rem;
+        color: var(--color-secondary);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////
+/////////////
+
+$bgColor: #3a3d55;
+$slideBgColor: rgba(255,255,255,0.3);
+$slideBallColor: white;
+$slideBallIconColor: black;
+$slideTextColor: #3a3d55;
+
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin nonselect {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+	cursor: default;
+}
+
+#button-background {
+	position: relative;
+	background-color: $slideBgColor;
+	width: 400px;
+	height: 80px;
+	border: white;
+	border-radius: 40px;
+  @include center;
+}
+
+#slider {
+	transition: width 0.3s,
+		border-radius 0.3s,
+		height 0.3s;
+	position: absolute;
+	left: -10px;
+	background-color: $slideBallColor;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	@include center;
+	&.unlocked {
+		transition: all 0.3s;
+		width: inherit;
+		left: 0 !important;
+		height: inherit;
+		border-radius: inherit;
+	}
+}
+
+.material-icons {
+	color: $slideBallIconColor;
+	font-size: 50px;
+	@include nonselect;
+}
+
+.slide-text {
+	color: $slideTextColor;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	@include nonselect;
+}
+
+.bottom {
+	position: fixed;
+	bottom: 0;
+	font-size: 14px;
+	color: white;
+	a {
+		color: white;
+	}
+}
