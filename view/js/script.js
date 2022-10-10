@@ -239,7 +239,7 @@ window.addEventListener("scroll", function (e) {
   // Navbar uplift animation
   if (start2 < 50) {
     navbar.style.transition = "all 0.5s ease";
-    navbar.style.boxShadow = "None";
+    navbar.style.boxShadow = "rgba(0, 0, 0, 0.24) 0px 3px 8px";
   }
 
   if (start2 >= 40) {
