@@ -1,5 +1,7 @@
 .u-button-special {
   color: var(--color-primary) !important;
+  padding-left: 1.5rem !important;
+  padding-right: 0.5rem;
   &::after {
     content: ">";
     margin-left: 1rem;
@@ -28,10 +30,23 @@
   @include flex;
 }
 
+
 .u-color-text {
   color: var(--color-primary);
   border-bottom: 1px solid var(--color-primary);
   padding-bottom: 1px;
+}
+
+.u-margin-top-minus {
+  margin-top: -3rem !important;
+}
+
+.u-margin-right-minus2 {
+  margin-right: -0.8rem !important;
+}
+
+.u-margin-right-minus {
+  margin-right: -2.5rem !important;
 }
 
 .u-new-tag {

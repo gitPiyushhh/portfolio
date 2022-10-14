@@ -14,10 +14,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
   }
 
 
   &__card-wrapper {
     margin-top: 10rem;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
   }
 }

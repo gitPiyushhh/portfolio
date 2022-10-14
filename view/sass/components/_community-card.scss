@@ -1,5 +1,5 @@
 .community-card {
-    width: 33%;
+    width: 31%;
     background-color: var(--bg-light);
     border-radius: 1rem;
 
@@ -33,5 +33,25 @@
         text-decoration: None;
         color: var(--color-primary);
         margin-top: 3rem;
+    }
+
+    &__card-container {
+        margin-top: 3rem;
+        padding: 2rem;
+        padding-top: 0;
+        padding-bottom: 3rem;
+        border: 0.5px dashed var(--color-primary);
+        border-radius: 0.5rem;
+    }
+
+    &__card-footer {
+        padding: 3rem 0 0 0;
+        // border: 1px solid var(--color-primary)
+    }
+
+    &__card-date {
+        font-weight: 100;
+        text-decoration: None;
+        color: var(--color-secondary);
     }
 }
