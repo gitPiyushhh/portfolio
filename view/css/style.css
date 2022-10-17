@@ -336,6 +336,10 @@ html {
 .u-mt-7 {
   margin-top: 6.4rem !important; }
 
+@media (max-width: 56.25em) {
+  .u-mt-3 {
+    margin-top: 3.2rem !important; } }
+
 .u-hidden {
   display: none; }
 
