@@ -26,3 +26,56 @@
     }
   }
 }
+
+///////////////////////////
+/// Discord
+.discord {
+  width: 100vw;
+  height: fit-content;
+  
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+  
+  &__inner {
+    max-width: var(--grid-width);
+    margin: 0 auto;
+    padding: 5rem;
+    background-color: var(--bg-light);
+    border-radius: 1rem;
+    box-shadow: var(--drop-shadow-big);
+    color: var(--color-primary);
+
+    @include respond(tab-port) {
+      padding: 5rem 2rem;
+
+      flex-direction: column;
+    }
+  } 
+
+  &__icon {
+    @include respond(tab-port) {
+      margin-top: 4rem;
+    }
+  }
+
+  &__btn {
+    text-decoration: none;
+    color: var(--bg-light);
+    padding: 2rem;
+    background-color: var(--color-primary);
+    box-shadow: var(--drop-shadow-big);
+    border-radius: 0.5rem;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @include respond(tab-port) {
+      margin-top: 2.2rem;
+      padding: 1rem;
+    }
+  }
+}
