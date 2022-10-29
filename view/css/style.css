@@ -1066,7 +1066,7 @@ html {
   width: 100vw;
   height: 100vh;
   background-color: #4d4d4d42;
-  z-index: 99999999999999999; }
+  z-index: 9998; }
   .login__inner {
     max-width: var(--grid-width);
     margin: 0 auto; }
