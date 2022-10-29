@@ -1,0 +1,68 @@
+.login {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #4d4d4d42;
+    z-index: 99999999999999999;
+
+    &__inner {
+        max-width: var(--grid-width);
+        margin: 0 auto;
+
+        @include respond(tab-port) {
+            padding: 2rem;
+        }
+    }
+
+    &__input {
+        width: var(--grid-width);
+
+        @include respond(tab-port) {
+            width: 40rem;
+        }
+
+        &--text {
+            color: var(--color-primary);
+        }
+        
+        &--placeholder {
+            width: 100%;
+            margin-top: 2.4rem;
+            padding: 2rem 2rem;
+            border-radius: 1rem;
+            border: none;
+
+            outline: none;
+            transition: all 0.5s ease;
+
+            &::placeholder{
+                color: var(--bg-dark);
+                font-weight: 300;
+            }
+
+            &:hover {
+                outline: 1px solid var(--color-primary);
+                outline-offset: 5px;
+            }
+
+        }
+    }
+
+    &__cta {
+        padding: 2rem;
+        border-radius: 1rem;
+        background-color: var(--color-primary);
+
+        font-weight: 300;
+        width: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        margin-top: 1rem;
+
+        // transform: translateX(50%);
+
+        &:hover {
+            transform: scale(1.01);
+        }
+    }
+}

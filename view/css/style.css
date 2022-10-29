@@ -1061,6 +1061,51 @@ html {
         outline: 1px solid var(--color-primary);
         outline-offset: 1rem; } }
 
+.login {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #4d4d4d42;
+  z-index: 99999999999999999; }
+  .login__inner {
+    max-width: var(--grid-width);
+    margin: 0 auto; }
+    @media (max-width: 56.25em) {
+      .login__inner {
+        padding: 2rem; } }
+  .login__input {
+    width: var(--grid-width); }
+    @media (max-width: 56.25em) {
+      .login__input {
+        width: 40rem; } }
+    .login__input--text {
+      color: var(--color-primary); }
+    .login__input--placeholder {
+      width: 100%;
+      margin-top: 2.4rem;
+      padding: 2rem 2rem;
+      border-radius: 1rem;
+      border: none;
+      outline: none;
+      transition: all 0.5s ease; }
+      .login__input--placeholder::placeholder {
+        color: var(--bg-dark);
+        font-weight: 300; }
+      .login__input--placeholder:hover {
+        outline: 1px solid var(--color-primary);
+        outline-offset: 5px; }
+  .login__cta {
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: var(--color-primary);
+    font-weight: 300;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin-top: 1rem; }
+    .login__cta:hover {
+      transform: scale(1.01); }
+
 .navbar {
   width: 100vw;
   padding: 5rem 0;
