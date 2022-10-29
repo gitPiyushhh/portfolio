@@ -309,3 +309,4 @@ hideBtnCertificates.addEventListener("click", (e) => {
       ? "VIEW ALL CERTIFICATIONS"
       : "VIEW LESS CERTIFICATIONS";
 });
+

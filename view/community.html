@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" type="image/x-icon" href="./drawables/logo test 2.png" />
   </head>
-  <body class="community-body">
+  <body class="community-body" >
 
     <!-- LOGIN SCREEN -->
-    <section class="login u-flex">
+    <section class="login u-flex" id="login">
       <div class="login__inner">
         <div class="login__input u-flex-column" style= "margin-bottom: 4.8rem;">
           <label for="login__input--name" class="login__input--text h5">Username</label>
@@ -28,7 +28,7 @@
           <input type="password" class="login__input--placeholder body1" id= 'login__input--password' placeholder="Password..">
         </div>
 
-        <button class="h6 login__cta">
+        <button class="h6 login__cta" id="login__cta">
           Submit
         </button>
       </div>
@@ -73,101 +73,77 @@
       </div>
 
       
-      <!-- COMMUNITY CARDS -->
+
+      <div class="content u-hidden" id="content" style="transition: all 1s ease">
+              <!-- COMMUNITY CARDS -->
 
       <!-- STRIVER SHEET -->
       <section class="community-main" >
         
 
-      <div class="community-main__inner">
-        
-        <div class="heading-wrapper">
-            <h2 class="h2 heading-wrapper__heading">Striver's SDE SHEET</h2>
-            <h6 class="body1 heading-wrapper__sub-heading">ALL Solutions {In Python}</h6>
-        </div>
-        
-      
-      <div class="community-main__card-wrapper">
-
-        <div class="community-card">
-            <img src="./drawables/Linked list --with tags.png" alt="Linked list" class="community-card__img">
-
-            <div class="community-card__wrapper">
-                <h6 class="community-card__text body2"> <span class="u-color-text">Pro Tip</span>: "Looks easy but can be complicated many times as dealing with ptr, so always practice on P & P"</h6>
-
-                <div class="community-card__card-container">
-                  <div class="u-flex">
-                    <p class="body1 community-card__card-cta">Code Links: </p>
-                    <a href="https://github.com/gitPiyushhh/piyush___LinkedList" target="_blank" class = "community-card__card-link body1">Open Link</a>
-                </div>
-
-                <div class="u-flex">
-                    <p class="body1 community-card__card-cta">Hand Notes: </p>
-                    <a href="https://drive.google.com/file/d/1BkAUzepAwkx1z4p-X4MVv-l57aT8Frw8/view" target ="_blank" class = "community-card__card-link body1">Open Link</a>
-                </div>
-                </div>
-
-                <div class="u-flex community-card__card-footer">
-                  <p class="overline community-card__card-date">Created at: 10-10-2022</p>
-                  <!-- <p class="overline community-card__card-date">Autour: Piyush</p> -->
-                </div>
-            </div>
-            
-        </div>
-
-      </div>
-      </div>
-      </section>
-
-      <!-- IMPORTANT TECHNIQUES -->
-      <section class="community-main u-margin-top-minus">
-        
-
-      <div class="community-main__inner">
-        
-        <div class="heading-wrapper">
-            <h2 class="h2 heading-wrapper__heading">Programming Techniques</h2>
-            <h6 class="body1 heading-wrapper__sub-heading">Lvl up as a programmer</h6>
-        </div>
-        
-        <div class="community-main__card-wrapper u-flex">
-
-          <div class="community-card">
-            <img src="./drawables/OOPs banner.png" alt="OOPS" class="community-card__img">
-
-            <div class="community-card__wrapper">
-                <h6 class="community-card__text body2"> <span class="u-color-text">Pro Tip</span>: "Sometimes we just want to revise just the code implementations of OOPs concept, so here it is 🙂"</h6>
-
-                <div class="community-card__card-container">
-                  <div class="u-flex">
-                    <p class="body1 community-card__card-cta">Code Links: </p>
-                    <a href="https://github.com/gitPiyushhh/OOPS" target="_blank" class = "community-card__card-link body1">Open Link</a>
-                </div>
-
-                <div class="u-flex">
-                    <p class="body1 community-card__card-cta">Hand Notes: </p>
-                    <a href="#" target ="_blank" class = "community-card__card-link body1">Open Link</a>
-                </div>
-                </div>
-
-                <div class="u-flex community-card__card-footer">
-                  <p class="overline community-card__card-date">Created at: 17-10-2022</p>
-                  <!-- <p class="overline community-card__card-date">Autour: Piyush</p> -->
-                </div>
-            </div>
-            
+        <div class="community-main__inner">
+          
+          <div class="heading-wrapper">
+              <h2 class="h2 heading-wrapper__heading">Striver's SDE SHEET</h2>
+              <h6 class="body1 heading-wrapper__sub-heading">ALL Solutions {In Python}</h6>
           </div>
-
-          <div class="community-card u-mt-3">
-              <img src="./drawables/Two ptr banner.png" alt="Two pointers" class="community-card__img">
+          
+        
+        <div class="community-main__card-wrapper">
+  
+          <div class="community-card">
+              <img src="./drawables/Linked list --with tags.png" alt="Linked list" class="community-card__img">
   
               <div class="community-card__wrapper">
-                  <h6 class="community-card__text body2"> <span class="u-color-text">Pro Tip</span>: "Always try to think of two ptrs if you have terms like 'sorted array', 'reduce time complexity'"</h6>
+                  <h6 class="community-card__text body2"> <span class="u-color-text">Pro Tip</span>: "Looks easy but can be complicated many times as dealing with ptr, so always practice on P & P"</h6>
   
                   <div class="community-card__card-container">
                     <div class="u-flex">
                       <p class="body1 community-card__card-cta">Code Links: </p>
-                      <a href="https://github.com/gitPiyushhh/piyush___TwoPtr" target="_blank" class = "community-card__card-link body1">Open Link</a>
+                      <a href="https://github.com/gitPiyushhh/piyush___LinkedList" target="_blank" class = "community-card__card-link body1">Open Link</a>
+                  </div>
+  
+                  <div class="u-flex">
+                      <p class="body1 community-card__card-cta">Hand Notes: </p>
+                      <a href="https://drive.google.com/file/d/1BkAUzepAwkx1z4p-X4MVv-l57aT8Frw8/view" target ="_blank" class = "community-card__card-link body1">Open Link</a>
+                  </div>
+                  </div>
+  
+                  <div class="u-flex community-card__card-footer">
+                    <p class="overline community-card__card-date">Created at: 10-10-2022</p>
+                    <!-- <p class="overline community-card__card-date">Autour: Piyush</p> -->
+                  </div>
+              </div>
+              
+          </div>
+  
+        </div>
+        </div>
+        </section>
+  
+        <!-- IMPORTANT TECHNIQUES -->
+        <section class="community-main u-margin-top-minus">
+          
+  
+        <div class="community-main__inner">
+          
+          <div class="heading-wrapper">
+              <h2 class="h2 heading-wrapper__heading">Programming Techniques</h2>
+              <h6 class="body1 heading-wrapper__sub-heading">Lvl up as a programmer</h6>
+          </div>
+          
+          <div class="community-main__card-wrapper u-flex">
+  
+            <div class="community-card">
+              <img src="./drawables/OOPs banner.png" alt="OOPS" class="community-card__img">
+  
+              <div class="community-card__wrapper">
+                  <h6 class="community-card__text body2"> <span class="u-color-text">Pro Tip</span>: "Sometimes we just want to revise just the code implementations of OOPs concept, so here it is 🙂"</h6>
+  
+                  <div class="community-card__card-container">
+                    <div class="u-flex">
+                      <p class="body1 community-card__card-cta">Code Links: </p>
+                      <a href="https://github.com/gitPiyushhh/OOPS" target="_blank" class = "community-card__card-link body1">Open Link</a>
                   </div>
   
                   <div class="u-flex">
@@ -177,168 +153,195 @@
                   </div>
   
                   <div class="u-flex community-card__card-footer">
-                    <p class="overline community-card__card-date">Created at: 13-10-2022</p>
+                    <p class="overline community-card__card-date">Created at: 17-10-2022</p>
                     <!-- <p class="overline community-card__card-date">Autour: Piyush</p> -->
                   </div>
               </div>
               
-          </div>
-
-          <div class="community-card u-mt-3">
-            <img src="./drawables/Recursion banner.png" alt="Two pointers" class="community-card__img">
-
-            <div class="community-card__wrapper">
-                <h6 class="community-card__text body2"> <span class="u-color-text">Pro Tip</span>: "Whenever you see that we have to explore all the possibilities {then always recur}"</h6>
-
-                <div class="community-card__card-container">
-                  <div class="u-flex">
-                    <p class="body1 community-card__card-cta">Code Links: </p>
-                    <a href="https://github.com/gitPiyushhh/piyush___Recursion" target="_blank" class = "community-card__card-link body1">Open Link</a>
-                </div>
-
-                <div class="u-flex">
-                    <p class="body1 community-card__card-cta">Hand Notes: </p>
-                    <a href="#" target ="_blank" class = "community-card__card-link body1">Open Link</a>
-                </div>
-                </div>
-
-                <div class="u-flex community-card__card-footer">
-                  <p class="overline community-card__card-date">Created at: 25-10-2022</p>
-                  <!-- <p class="overline community-card__card-date">Autour: Piyush</p> -->
-                </div>
             </div>
-            
-        </div>
-
-        </div>
-      
-      </div>
-      </section>
-
-        <!-- INTERVIEW QUESTIONS  -->
-        <section class="community-main u-margin-top-minus" style="padding: 0">
-        
-
-          <div class="community-main__inner">
-            
-            <div class="heading-wrapper">
-                <h2 class="h2 heading-wrapper__heading">Previous Interviews</h2>
-                <h6 class="body1 heading-wrapper__sub-heading">Learn from mistakes</h6>
-            </div>
-            
-            <div class="community-main__card-wrapper u-flex">
+  
+            <div class="community-card u-mt-3">
+                <img src="./drawables/Two ptr banner.png" alt="Two pointers" class="community-card__img">
     
-              <div class="community-card u-width-100" style="background-color: transparent;">
-                <img src="./drawables/Interview expirence banner.png" alt="OOPS" class="community-card__img u-width-100" style="border-radius: 0; border-bottom: 0.5px solid grey;">
+                <div class="community-card__wrapper">
+                    <h6 class="community-card__text body2"> <span class="u-color-text">Pro Tip</span>: "Always try to think of two ptrs if you have terms like 'sorted array', 'reduce time complexity'"</h6>
     
-                <div class="community-card__wrapper " style="padding: 1rem;">
-    
-                    <div class="community-card__card-container" >
-                      <div class="u-flex-column">
-
-                        <a href="https://aware-homburg-c82.notion.site/Protiviti-Interview-Questions-55ab6a84cd324379a41cc1076c812576" target="_blank" class = "community-card__card-link body1">1. Protiviti</a>
+                    <div class="community-card__card-container">
+                      <div class="u-flex">
+                        <p class="body1 community-card__card-cta">Code Links: </p>
+                        <a href="https://github.com/gitPiyushhh/piyush___TwoPtr" target="_blank" class = "community-card__card-link body1">Open Link</a>
                     </div>
     
-                    
+                    <div class="u-flex">
+                        <p class="body1 community-card__card-cta">Hand Notes: </p>
+                        <a href="#" target ="_blank" class = "community-card__card-link body1">Open Link</a>
+                    </div>
                     </div>
     
                     <div class="u-flex community-card__card-footer">
-                      <!-- <p class="overline community-card__card-date">Created at: 19-10-2022</p> -->
+                      <p class="overline community-card__card-date">Created at: 13-10-2022</p>
                       <!-- <p class="overline community-card__card-date">Autour: Piyush</p> -->
                     </div>
                 </div>
                 
             </div>
-    
-            </div>
-          
+  
+            <div class="community-card u-mt-3">
+              <img src="./drawables/Recursion banner.png" alt="Two pointers" class="community-card__img">
+  
+              <div class="community-card__wrapper">
+                  <h6 class="community-card__text body2"> <span class="u-color-text">Pro Tip</span>: "Whenever you see that we have to explore all the possibilities {then always recur}"</h6>
+  
+                  <div class="community-card__card-container">
+                    <div class="u-flex">
+                      <p class="body1 community-card__card-cta">Code Links: </p>
+                      <a href="https://github.com/gitPiyushhh/piyush___Recursion" target="_blank" class = "community-card__card-link body1">Open Link</a>
+                  </div>
+  
+                  <div class="u-flex">
+                      <p class="body1 community-card__card-cta">Hand Notes: </p>
+                      <a href="#" target ="_blank" class = "community-card__card-link body1">Open Link</a>
+                  </div>
+                  </div>
+  
+                  <div class="u-flex community-card__card-footer">
+                    <p class="overline community-card__card-date">Created at: 25-10-2022</p>
+                    <!-- <p class="overline community-card__card-date">Autour: Piyush</p> -->
+                  </div>
+              </div>
+              
           </div>
-          </section>
-
-      
-
-      <!-- FRONTEND TECHNIQUES -->
-      <section class="community-main u-margin-top-minus u-hidden" >
-        
-
-        <div class="community-main__inner">
-          
-          <div class="heading-wrapper">
-              <h2 class="h2 heading-wrapper__heading">Frontend Stack</h2>
-              <h6 class="body1 heading-wrapper__sub-heading">Create asthetic screens</h6>
-          </div>
-
-          <div class="community-main__card-wrapper u-flex u-overflow-scroll">
-            <div class="community-main__snippets">
-              <div class="community-main__snippets-img-wrapper u-margin-right-minus"  id="test1">
-                <img src="./drawables/frontend - 1 --1.png" alt="Snippet 1" class="community-main__snippets-img">
-              </div>
   
-              <div class="community-main__snippets-wrapper">
-                <h6 class="community-main__snippets-text h5">
-                  Snippet-1
-                </h6>
-              </div>
-  
-              <div class="community-main__snippets-btn-wrapper u-flex ">
-                <p class="h5 community-main__snippets-back community-main__snippets-btn " id="snippet-1back">&#171;Prev</p>
-                <p class="h5 community-main__snippets-fwd community-main__snippets-btn " id="snippet-1fwd">Next&#187;</p>
-              </div>
-            </div>
-
-            <div class="community-main__snippets">
-              <div class="community-main__snippets-img-wrapper"  id="test2">
-                <img src="./drawables/frontend - 2 --1.png" alt="Snippet 2" class="community-main__snippets-img">
-              </div>
-  
-              <div class="community-main__snippets-wrapper">
-                <h6 class="community-main__snippets-text h5">
-                  Snippet-2
-                </h6>
-              </div>
-  
-              <div class="community-main__snippets-btn-wrapper u-flex">
-                <p class="h5 community-main__snippets-back community-main__snippets-btn " id="snippet-2back">&#171;Prev</p>
-                <p class="h5 community-main__snippets-fwd community-main__snippets-btn " id="snippet-2fwd">Next&#187;</p>
-              </div>
-            </div>
-
-            <div class="community-main__snippets">
-              <div class="community-main__snippets-img-wrapper"  id="test3">
-                <img src="./drawables/frontend - 3 --1.png" alt="Snippet 3" class="community-main__snippets-img">
-              </div>
-  
-              <div class="community-main__snippets-wrapper">
-                <h6 class="community-main__snippets-text h5">
-                  Snippet-3
-                </h6>
-              </div>
-  
-              <div class="community-main__snippets-btn-wrapper u-flex">
-                <p class="h5 community-main__snippets-back community-main__snippets-btn " id="snippet-3back">&#171;Prev</p>
-                <p class="h5 community-main__snippets-fwd community-main__snippets-btn " id="snippet-3fwd">Next&#187;</p>
-              </div>
-            </div>
-
-      
           </div>
         
-
-
-
-          
         </div>
         </section>
-
+  
+          <!-- INTERVIEW QUESTIONS  -->
+          <section class="community-main u-margin-top-minus" style="padding: 0">
+          
+  
+            <div class="community-main__inner">
+              
+              <div class="heading-wrapper">
+                  <h2 class="h2 heading-wrapper__heading">Previous Interviews</h2>
+                  <h6 class="body1 heading-wrapper__sub-heading">Learn from mistakes</h6>
+              </div>
+              
+              <div class="community-main__card-wrapper u-flex">
       
-        <!-- 5. DISCORD {styled in the _community.scss page} -->
+                <div class="community-card u-width-100" style="background-color: transparent;">
+                  <img src="./drawables/Interview expirence banner.png" alt="OOPS" class="community-card__img u-width-100" style="border-radius: 0; border-bottom: 0.5px solid grey;">
+      
+                  <div class="community-card__wrapper " style="padding: 1rem;">
+      
+                      <div class="community-card__card-container" >
+                        <div class="u-flex-column">
+  
+                          <a href="https://aware-homburg-c82.notion.site/Protiviti-Interview-Questions-55ab6a84cd324379a41cc1076c812576" target="_blank" class = "community-card__card-link body1">1. Protiviti</a>
+                      </div>
+      
+                      
+                      </div>
+      
+                      <div class="u-flex community-card__card-footer">
+                        <!-- <p class="overline community-card__card-date">Created at: 19-10-2022</p> -->
+                        <!-- <p class="overline community-card__card-date">Autour: Piyush</p> -->
+                      </div>
+                  </div>
+                  
+              </div>
+      
+              </div>
+            
+            </div>
+            </section>
+  
         
-        <section class="discord u-section-padding" style="margin-bottom: 5rem;">
-          <div class="discord__inner u-flex">
-            <h4 class="h6 discord__text">"Join discord group for updates"</h4>
-            <a href="https://discord.gg/vzMRAVvx" target="blank" class="discord__btn u-flex" style="width: fit-content;"><span><p class="body1" style="display: inline-block; font-weight: 400; margin-right: 1.2rem;">Join Group</p></span><img src="./drawables/discord__icon.svg" alt="" class="contact__img discord__icon" style="display: inline-block; margin: 0; width: 4rem; height: auto; outline: none;"></a>
+  
+        <!-- FRONTEND TECHNIQUES -->
+        <section class="community-main u-margin-top-minus u-hidden" >
+          
+  
+          <div class="community-main__inner">
+            
+            <div class="heading-wrapper">
+                <h2 class="h2 heading-wrapper__heading">Frontend Stack</h2>
+                <h6 class="body1 heading-wrapper__sub-heading">Create asthetic screens</h6>
+            </div>
+  
+            <div class="community-main__card-wrapper u-flex u-overflow-scroll">
+              <div class="community-main__snippets">
+                <div class="community-main__snippets-img-wrapper u-margin-right-minus"  id="test1">
+                  <img src="./drawables/frontend - 1 --1.png" alt="Snippet 1" class="community-main__snippets-img">
+                </div>
+    
+                <div class="community-main__snippets-wrapper">
+                  <h6 class="community-main__snippets-text h5">
+                    Snippet-1
+                  </h6>
+                </div>
+    
+                <div class="community-main__snippets-btn-wrapper u-flex ">
+                  <p class="h5 community-main__snippets-back community-main__snippets-btn " id="snippet-1back">&#171;Prev</p>
+                  <p class="h5 community-main__snippets-fwd community-main__snippets-btn " id="snippet-1fwd">Next&#187;</p>
+                </div>
+              </div>
+  
+              <div class="community-main__snippets">
+                <div class="community-main__snippets-img-wrapper"  id="test2">
+                  <img src="./drawables/frontend - 2 --1.png" alt="Snippet 2" class="community-main__snippets-img">
+                </div>
+    
+                <div class="community-main__snippets-wrapper">
+                  <h6 class="community-main__snippets-text h5">
+                    Snippet-2
+                  </h6>
+                </div>
+    
+                <div class="community-main__snippets-btn-wrapper u-flex">
+                  <p class="h5 community-main__snippets-back community-main__snippets-btn " id="snippet-2back">&#171;Prev</p>
+                  <p class="h5 community-main__snippets-fwd community-main__snippets-btn " id="snippet-2fwd">Next&#187;</p>
+                </div>
+              </div>
+  
+              <div class="community-main__snippets">
+                <div class="community-main__snippets-img-wrapper"  id="test3">
+                  <img src="./drawables/frontend - 3 --1.png" alt="Snippet 3" class="community-main__snippets-img">
+                </div>
+    
+                <div class="community-main__snippets-wrapper">
+                  <h6 class="community-main__snippets-text h5">
+                    Snippet-3
+                  </h6>
+                </div>
+    
+                <div class="community-main__snippets-btn-wrapper u-flex">
+                  <p class="h5 community-main__snippets-back community-main__snippets-btn " id="snippet-3back">&#171;Prev</p>
+                  <p class="h5 community-main__snippets-fwd community-main__snippets-btn " id="snippet-3fwd">Next&#187;</p>
+                </div>
+              </div>
+  
+        
+            </div>
+          
+  
+  
+  
+            
           </div>
-        </section>
+          </section>
+  
+        
+          <!-- 5. DISCORD {styled in the _community.scss page} -->
+          
+          <section class="discord u-section-padding" style="margin-bottom: 5rem;">
+            <div class="discord__inner u-flex">
+              <h4 class="h6 discord__text">"Join discord group for updates"</h4>
+              <a href="https://discord.gg/vzMRAVvx" target="blank" class="discord__btn u-flex" style="width: fit-content;"><span><p class="body1" style="display: inline-block; font-weight: 400; margin-right: 1.2rem;">Join Group</p></span><img src="./drawables/discord__icon.svg" alt="" class="contact__img discord__icon" style="display: inline-block; margin: 0; width: 4rem; height: auto; outline: none;"></a>
+            </div>
+          </section>
+      </div>
         
         
         <!-- 6. Footer -->
