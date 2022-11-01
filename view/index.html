@@ -33,11 +33,11 @@
         
 
         <div class="navbar__button-wrapper">
-          <a href="#" class="button navbar__button u-button-special">Home</a>
-          <a href="#projects" class="button navbar__button" id="projects_goto">Projects</a>
-          <a href="#certificates" class="button navbar__button u-padding-left-small">Certificates</a>
+          <a href="#" class="button navbar__button u-button-special" onclick= "document.getElementById('certificates').scrollIntoView({behavior: 'smooth'});">Home</a>
+          <a class="button navbar__button" id="projects_goto" onclick= "document.getElementById('projects').scrollIntoView({behavior: 'smooth'});">Projects</a>
+          <a  class="button navbar__button u-padding-left-small" id="certificates_goto" onclick= "document.getElementById('certificates').scrollIntoView({behavior: 'smooth'});">Certificates</a>
           <a href="./community.html" class="button navbar__button u-padding-left-small">Community</a>
-          <a href="#contact" class="button navbar__button u-padding-left-small">Contact</a>
+          <a class="button navbar__button u-padding-left-small" id="contact_goto" id="certificates_goto" onclick= "document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Contact</a>
         </div>
 
         <div class="navbar__menubar" id="menubar" >

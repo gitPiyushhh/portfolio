@@ -130,7 +130,7 @@ const projects = document.querySelector("#projects");
 btnScrollTo.addEventListener("click", (e) => {
   const projCords = projects.getBoundingClientRect();
 
-  window.scrollTo(projCords.left, projCords.top + window.pageYOffset);
+  // window.scrollTo(projCords.left, projCords.top + window.pageYOffset);
 });
 
 const projectCard = document.getElementById("#projectCard");
@@ -310,3 +310,12 @@ hideBtnCertificates.addEventListener("click", (e) => {
       : "VIEW LESS CERTIFICATIONS";
 });
 
+////////////////////////////////////////////
+//// Smooth scrolling effect
+
+const smoothScroll = function(from, to) {
+  document.getElementById(from).addEventListener('click', function (e) {
+    e.preventDefault();
+    document.getElementById(to).scrollIntoView({behavior: 'smooth'});
+  })
+}

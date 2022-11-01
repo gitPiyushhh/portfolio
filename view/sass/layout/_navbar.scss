@@ -71,6 +71,7 @@
     text-decoration: none;
     color: var(--color-secondary);
     transition: all 0.3s ease;
+    cursor: pointer;
 
     &::after {
       content: ">";

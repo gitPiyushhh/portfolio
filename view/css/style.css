@@ -1161,7 +1161,8 @@ html {
     padding-left: 2.4rem;
     text-decoration: none;
     color: var(--color-secondary);
-    transition: all 0.3s ease; }
+    transition: all 0.3s ease;
+    cursor: pointer; }
     .navbar__button::after {
       content: ">";
       margin-left: 1rem;
