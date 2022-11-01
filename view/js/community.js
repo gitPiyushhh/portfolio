@@ -173,3 +173,10 @@ login__cta.addEventListener('click', function(e) {
 
 ///////////////////////////////////////////
 /// Road map sections
+
+const ds = document.getElementById('ds_cta');
+
+ds.addEventListener('click', function (e) {
+  e.preventDefault();
+  document.getElementById("ds_section").scrollIntoView({behavior: 'smooth'});
+})

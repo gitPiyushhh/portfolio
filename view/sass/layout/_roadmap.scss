@@ -16,15 +16,22 @@
         width: fit-content;
         height: fit-content;
 
+        cursor: pointer;
+
         padding: 0.5rem;
         background: linear-gradient(90deg, #6CC04A 5.34%, #66B848 25.94%, #54A044 58.8%, #41873F 86.93%);
         
         border-radius: 1rem;
 
         margin-top: 2.4rem;
+        transition: all 0.5s ease;
 
         @include respond(tab-port) {
             width: 100%;
+        }
+
+        &:hover {
+            transform: scale(1.03);
         }
     }
     
