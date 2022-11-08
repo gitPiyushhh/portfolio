@@ -156,19 +156,19 @@ const login__cta = document.getElementById('login__cta');
 const content = document.getElementById('content');
 const login = document.getElementById('login');
 
-login__cta.addEventListener('click', function(e) {
-  e.preventDefault();
-  const username = document.getElementById('login__input--name').value;
-  const password = document.getElementById('login__input--password').value;
+// login__cta.addEventListener('click', function(e) {
+//   e.preventDefault();
+//   const username = document.getElementById('login__input--name').value;
+//   const password = document.getElementById('login__input--password').value;
 
-  if (username === 's' && password === 's') {
-    content.classList.remove('u-hidden');
-    login.classList.add('u-hidden');
-    alert('Welcome to community🥳');
-  } else {
-    alert('Either username or password is incorrect');
-  }
-})
+//   if (username === 's' && password === 's') {
+//     content.classList.remove('u-hidden');
+//     login.classList.add('u-hidden');
+//     alert('Welcome to community🥳');
+//   } else {
+//     alert('Either username or password is incorrect');
+//   }
+// })
 
 
 ///////////////////////////////////////////
