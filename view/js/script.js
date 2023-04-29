@@ -319,3 +319,12 @@ const smoothScroll = function(from, to) {
     document.getElementById(to).scrollIntoView({behavior: 'smooth'});
   })
 }
+
+/////////////////////////////////////////////
+/// Video work
+const vdo = document.getElementById('vdo');
+const img = document.getElementById('img');
+
+setTimeout(function () {
+  vdo.style.zIndex = 57;
+}, 1000)
